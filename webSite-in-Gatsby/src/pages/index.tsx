@@ -4,6 +4,7 @@ import About from '../components/About'
 import Portfolio from "../components/Portfolio"
 import Article from '../components/Article'
 import Skills from '../components/Skills'
+import Why from '../components/Why'
 import type { HeadFC } from "gatsby"
 
 const IndexPage = () => {
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <Portfolio />
       <Article />
       <Skills />
+      <Why />
     </div>
   )
 }
