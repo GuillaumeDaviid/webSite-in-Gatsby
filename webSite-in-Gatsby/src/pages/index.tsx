@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import About from '../components/About'
 import Portfolio from "../components/Portfolio"
 import Article from '../components/Article'
+import Skills from '../components/Skills'
 import type { HeadFC } from "gatsby"
 
 const IndexPage = () => {
@@ -12,6 +13,7 @@ const IndexPage = () => {
       <About />
       <Portfolio />
       <Article />
+      <Skills />
     </div>
   )
 }
