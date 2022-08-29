@@ -1,6 +1,7 @@
 import * as React from "react"
 import Header from '../components/Header'
 import About from '../components/About'
+import Portfolio from "../components/Portfolio"
 import type { HeadFC } from "gatsby"
 
 const IndexPage = () => {
@@ -8,6 +9,7 @@ const IndexPage = () => {
     <div>
       <Header />
       <About />
+      <Portfolio />
     </div>
   )
 }
