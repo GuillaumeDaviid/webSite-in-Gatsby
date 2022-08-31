@@ -1,12 +1,10 @@
 import * as React from 'react'
 import './styles/Why.scss'
-/*
-import smartPhone from "../images/app.png"
-import tablette from "../images/app2.png"
-import computer from "../images/makbook.png"
-*/
+import { StaticImage } from 'gatsby-plugin-image'
+
 
 export default function Why() {
+
     return(
         <div className="Why">
 
@@ -21,6 +19,11 @@ export default function Why() {
                     <div className="image_container">
 
                     </div>
+                    {/*<Img fluid={data.file.childImageSharp.fixed} />*/}
+                    <StaticImage
+                        alt="Smartphone responsive"
+                        src='../images/app.png'
+                    />
                     <h5 className="items-title">Responsive Design</h5>
                     <p className="items-text">Site web accessible sur mobile.</p>
                 </div>
