@@ -1,5 +1,7 @@
 import * as React from 'react'
-import { useState } from "react"/*
+import { useState } from "react"
+import './styles/Portfolio.scss'
+/*
 import netflix from '../images/netflix.png'
 import checkers from '../images/checkers.png'
 import academie from '../images/01academie.png'
