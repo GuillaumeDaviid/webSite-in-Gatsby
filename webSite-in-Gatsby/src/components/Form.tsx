@@ -1,4 +1,5 @@
 import * as React from 'react'
+import './styles/Form.scss'
 
 export default function Form() {
     return(

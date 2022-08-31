@@ -8,6 +8,7 @@ import Why from '../components/Why'
 import Form from '../components/Form'
 import Footer from '../components/Footer'
 import type { HeadFC } from "gatsby"
+import '../components/styles/global.scss'
 
 const IndexPage = () => {
   return (

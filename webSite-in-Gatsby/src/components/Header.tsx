@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { useState } from "react"
+import './styles/Header.scss'
 
 export default function Header() {
     const [visible, setVisible] = useState(false);

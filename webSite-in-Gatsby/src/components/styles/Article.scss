@@ -1,0 +1,54 @@
+.Article {
+    text-align: center;
+
+    &_separator {
+        height: 2px;
+        width: 85px;
+        margin: 70px auto;
+        background-color: #222222;
+    }
+
+    &_items {
+        min-height: 300px;
+        overflow: hidden;
+
+        &-btn {
+            z-index: 99;
+            position: absolute;
+            cursor: pointer;
+            height: 300px;
+            color: black;
+            border-color: grey;
+            background: rgba(255, 255, 255, .5);
+            width: 30px;
+        }
+
+        &-elt {
+            position: relative;
+            margin-top: 50px;
+            display: flex;
+            
+            &-item {
+                min-width: 25vw;
+            }
+        }
+    }
+}
+
+.right {
+    left: 0vw;
+}
+
+.left {
+    right: 0vw;
+}
+
+.item {
+    &_img {
+        max-width: 200px !important;
+        max-height: 100px !important;
+    }
+    &_link {
+        color: #222222;
+    }
+}
