@@ -19,7 +19,6 @@ export default function Why() {
                     <div className="image_container">
 
                     </div>
-                    {/*<Img fluid={data.file.childImageSharp.fixed} />*/}
                     <StaticImage
                         alt="Smartphone responsive"
                         src='../images/app.png'
@@ -32,6 +31,10 @@ export default function Why() {
                     <div className="image_container">
               
                     </div>
+                    <StaticImage
+                        alt="Smartphone responsive"
+                        src='../images/app2.png'
+                    />
                     <h5 className="items-title">Responsive Layout</h5>
                     <p className="items-text">Site web accessible sur tablette.</p>
                 </div>
@@ -40,6 +43,10 @@ export default function Why() {
                     <div className="image_container">
              
                     </div>
+                    <StaticImage
+                        alt="Smartphone responsive"
+                        src='../images/makbook.png'
+                    />
                     <h5 className="items-title">React.js</h5>
                     <p className="items-text">Vous avez un gros projet à venir ? React.js est utilisé par Facebook, Instagram, Twitter, Netflix ...</p>
                 </div>
