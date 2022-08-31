@@ -1,4 +1,5 @@
 import * as React from 'react'
+import './styles/Why.scss'
 /*
 import smartPhone from "../images/app.png"
 import tablette from "../images/app2.png"
