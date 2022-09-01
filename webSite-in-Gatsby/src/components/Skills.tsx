@@ -33,7 +33,7 @@ export default function Skill() {
                 <div className='skills'>PHP</div>
                 <div className='skills'>Python</div>
                 <div className='skills'>MySQL</div>
-                <div className='skills'>GitHub</div>
+                <div className='skills'>Gatsby</div>
             </div>
             </div>
 
