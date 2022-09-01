@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { useState } from "react"
 import './styles/Portfolio.scss'
+import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
 /*
 import netflix from '../images/netflix.png'
 import checkers from '../images/checkers.png'
@@ -33,51 +35,50 @@ export default function Portfolio() {
             <div className="Portfolio_items">
                 
                 <div className={`Portfolio_items-elt ${selected === "all" || selected === "front" ? `visible` : `notVisible`}`}>
-                    
+                <StaticImage alt="Smartphone responsive" src='../images/netflix.png' />
                     <div className="Portfolio_items-content">
                         <h3>Netflix Clone</h3>
-                        
-                        <a>Link</a>
+                        <Link to="https://github.com/GuillaumeDaviid/Netflix-Clone" target="_blank">Link</Link>
                         
                     </div>
                 </div>
 
                 <div className={`Portfolio_items-elt ${selected === "all" || selected === "front" ? `visible` : `notVisible`}`}>
-                
+                <StaticImage alt="Smartphone responsive" src='../images/checkers.png' />
                 <div className="Portfolio_items-content">
                         <h3>Jeu de Dame</h3>
                         
-                        <a>Link</a>
+                        <Link to="https://guillaumedaviid.github.io/Checkers-Game/" target="_blank">Link</Link>
                        
                     </div>
                 </div>
 
                 <div className={`Portfolio_items-elt ${selected === "all" || selected === "front" || selected === "full" ? `visible` : `notVisible`}`}>
-              
+                <StaticImage alt="Smartphone responsive" src='../images/01academie.png' />
                 <div className="Portfolio_items-content">
                         <h3>01 ACADEMIE</h3>
                      
-                        <a>Link</a>
+                        <Link to="https://www.01academie.com/" target="_blank">Link</Link>
                        
                     </div>
                 </div>
 
                 <div className={`Portfolio_items-elt ${selected === "all" || selected === "front" || selected === "full" ? `visible` : `notVisible`}`}>
-                
+                <StaticImage alt="Smartphone responsive" src='../images/01courses.png' />
                 <div className="Portfolio_items-content">
                         <h3>01 ACADEMIE</h3>
                         
-                        <a>Link</a>
+                        <Link to="https://www.01academie.com/" target="_blank">Link</Link>
                         
                     </div>
                 </div>
 
                 <div className={`Portfolio_items-elt ${selected === "all" || selected === "front" || selected === "full" ? `visible` : `notVisible`}`}>
-        
+                <StaticImage alt="Smartphone responsive" src='../images/01home.png' />
                 <div className="Portfolio_items-content">
                         <h3>01 ACADEMIE</h3>
                     
-                        <a>Link</a>
+                        <Link to="https://www.01academie.com/" target="_blank">Link</Link>
                       
                     </div>
                 </div>
