@@ -1,0 +1,38 @@
+---
+title: "Javascript : Faire apparaître un élément au défilement"
+date: "2021-10-30"
+hero_image: "./js.webp"
+hero_image_alt: "Javascript"
+hero_image_credit_text: "Christopher Ayme"
+hero_image_credit_link: "https://unsplash.com/photos/ocZ-_Y7-Ptg"
+---
+
+Aujourd’hui, il est de plus en plus fréquent de tomber sur des sites qui ont la particularité de faire apparaître leurs éléments au défilement de la page. Cette animation devient de plus en plus commune, il attire donc la curiosité et parfois même l’envie de la reproduire.
+
+Je vais donc vous faire découvrir un moyen de faire apparaître les éléments de vos pages au moment du scroll.
+
+Les prérequis :
+HTML → C’est la base des bases, connaître les balises les plus couramment utilisées suffira ici.
+Javascript → Il vous faudra connaître, là aussi, les bases de Javascript. Pas besoin d’être un crack, si vous savez, par exemple, utiliser des fonctions ou encore l’utilisation des classes, cela sera largement suffisant.
+Un éditeur de texte → Si vous remplissez les deux premiers prérequis, alors normalement, vous remplissez aussi celui-ci, mais au cas ou, utilisez celui avec lequel vous êtes le plus à l’aise. Si vous ne savez pas lequel utiliser, je peux vous conseiller Atom ou encore Vs Code.
+ScrollReveal :
+Pour faire apparaître un élément au défilement, nous allons utiliser une librairie javascript qui porte le nom de ScrollReveal.
+
+Comme son nom l’indique, elle permet de révéler un élément au scroll de manière très simple.
+J’ai fait le choix de vous présenter cette librairie, car c’est celle que j’utilise, mais sachez qu’il en existe d’autres. Il existe, d’ailleurs, d’autres manières de faire ce que nous voulons sans avoir à passer par une librairie.
+
+Pour ceux qui ne sont pas familiers avec les librairies Javascript, laissez-moi vous expliquer de quoi il s’agit.
+
+Pour faire simple, une librairie ou bibliothèque Javascript est un ensemble de fonctions pré-écrites dans le but d’être réutilisé. En gros, un développeur a rencontré un problème, il a trouvé une solution à ce problème. Il décide de partager cette solution à tout le monde.
+
+Bref, entrons enfin dans le vif du sujet.
+
+L’installation :
+Pour commencer, nous devons installer ScrollReveal.
+
+Il existe deux manières de faire :
+
+l’installer via la commande npm de Node.JS
+Utiliser un CDN(content delivery network) qui conservera pour nous les fichiers à utiliser sur un serveur. C’est cette solution que nous allons utiliser, déjà parce qu’elle ne demande aucune installation particulière sur notre machine, mais surtout, car c’est la solution recommandée par les développeurs de ScrollReveal.
+Pour ce faire, allez dans votre fichier HTML et ajouter une balise script. L’attribut src aura alors la valeur ci-dessous. C’est là que se trouve les fonctions dont nous allons avoir besoin.
+
