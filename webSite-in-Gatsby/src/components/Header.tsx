@@ -19,6 +19,7 @@ export default function Header() {
                 <li><a href="#home" onClick={handleClick}><span>Accueil</span></a></li>
                 <li><a href="#portfolio" onClick={handleClick}><span>Portfolio</span></a></li>
                 <li><a href="#contact" onClick={handleClick}><span>Contact</span></a></li>
+                <li><a href="/blog" onClick={handleClick}><span>Blog</span></a></li>
                 </ul>
                 <a href="#" className="cd-close-menu" onClick={handleClick}>Close<span></span></a>
             </nav>
