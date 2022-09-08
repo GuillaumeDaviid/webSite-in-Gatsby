@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
-const Layout = () => {
+const Layout = ({ pageTitle, children }:any) => {
 
     return(
         <div>
@@ -16,6 +16,10 @@ const Layout = () => {
           </li>
         </ul>
       </nav>
+      <main>
+        <h1>{pageTitle}</h1>
+        {children}
+      </main>
         </div>
     )
 }

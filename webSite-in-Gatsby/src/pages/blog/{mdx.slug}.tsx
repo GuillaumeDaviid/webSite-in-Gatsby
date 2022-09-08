@@ -4,15 +4,12 @@ import Layout from '../../components/Layout'
 // @ts-ignore
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
-const BlogPost = ({ data }:any) => {
+const BlogPost = ({ data,children }:any) => {
   return (
-    <div>
-      <Layout />
+    <Layout pageTitle={data.mdx.frontmatter.title}>
       <p>{data.mdx.frontmatter.date}</p>
-      <MDXRenderer>
-        {data.mdx.body}
-      </MDXRenderer>
-    </div>
+      {children}
+    </Layout>
   )
 }
 

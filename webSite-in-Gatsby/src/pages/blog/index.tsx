@@ -6,7 +6,7 @@ const BlogPage = ({data}:any) => {
 
   return (
     <div>
-      <Layout />
+      <Layout pageTitle="My Blog Posts">
       {
         data.allMdx.nodes.map((node:any) => (
           <article key={node.id}>
@@ -19,7 +19,8 @@ const BlogPage = ({data}:any) => {
             <p>{node.excerpt}</p>
           </article>
         ))
-      } 
+      }
+      </Layout>
     </div>
       
   )
