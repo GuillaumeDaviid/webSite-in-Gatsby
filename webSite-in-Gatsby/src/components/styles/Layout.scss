@@ -1,0 +1,29 @@
+.Layout {
+    &__nav {
+        background: url('../../images/homebg.jpg') no-repeat 100% 100%;
+        background-size: cover;
+        position: relative;
+        height: 750px;
+        color: white;
+        &--children {
+            margin-right: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        margin-top: 260px;
+        display: flex;
+        font-size: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.nav__elt {
+    font-size: 1rem;
+    margin-left: 100px;
+    margin-top: 10px;
+}
