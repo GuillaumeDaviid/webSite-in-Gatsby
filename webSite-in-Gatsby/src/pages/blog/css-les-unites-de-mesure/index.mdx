@@ -1,0 +1,79 @@
+---
+title: "CSS : Les Unités de Mesure"
+date: "2022-03-09"
+slug: "css-les-unites-de-mesure"
+hero_image: "./git.png"
+hero_image_alt: "A gray pitbull relaxing on the sidewalk with its tongue hanging out"
+hero_image_credit_text: "Christopher Ayme"
+hero_image_credit_link: "https://unsplash.com/photos/ocZ-_Y7-Ptg"
+---
+
+Quand on débute en CSS, il est difficile de s’y retrouver dans toutes les unités de mesure mises à notre disposition. Même pour des développeurs plus expérimentés, faire un choix peut parfois être une tache ardue. Dans cet article, je vous fais une synthèse et vous donne des conseils venu de mon expérience sur l’utilisation et le choix des unités de mesure en CSS.
+
+Pixel, centimètre, pica, point, Em, Rem, viewport … Le CSS nous offre une multitude de possibilités parmi lesquelles il peut être difficile de faire un choix. Responsive design, bloc de texte, position d’un élément dans la page. Plusieurs paramètres doivent être pris en compte dans le choix d’une unité.
+
+I) Les types d’unités de mesure
+Nous pouvons classer les unités de mesure en plusieurs catégories.
+
+1) Les unités absolues
+Les unités absolues sont des unités qui ne dépendent ni du média d’affichage et de sa résolution et ni de l’élément parent.
+
+On trouve parmi eux le pixel(px), le centimètre(cm), le millimètre(mm), le pica(pc), le point(pt) …
+
+Généralement, on utilise dans cette liste presque exclusivement le pixel quand il s’agit du développement d’un site web.
+
+2) Les unités textuelles
+Les unités textuelles sont des unités qui s’applique au texte de votre application. Ils varient en fonction de la taille de la police ou de l’élément parent.
+
+On retrouve parmi eux le Em qui par défaut correspond à 16px, mais qui est proportionnel à la police si une est utilisée.
+Le Rem dépend du font-size définit par défaut.
+On retrouve aussi le Ch et le Ex qui sont beaucoup moins courant.
+
+3) Les unités de viewports
+Les unités de viewports sont des unités qui s’adaptent à la taille de l’écran et/ou la taille de la fenêtre de navigation de l’utilisateur.
+
+On retrouve le vh (hauteur du viewport) en d’autres termes, la hauteur de la fenêtre, et le vw (largeur du viewport) qui correspond à la largeur de la fenêtre.
+
+Il faut savoir que 1 vh et/ou 1 vw correspond respectivement à 1 % et de la hauteur et 1 % de la largeur.
+
+On a aussi la possibilité d’utiliser vmax et vmin pour indiquer une valeur maximale.
+
+4) Les unités de temps
+Oui, même en CSS il y a des unités de temps. On les utilise pour mettre en place des animations.
+
+On retrouve les secondes(s) et les millisecondes(ms).
+
+5) Les pourcentages
+Avec le pixel, cette unité est sûrement la plus utilisée.
+Le pourcentage s’adapte à son élément parent, ce qui est logique. Par exemple, si l’élément parent à une taille de 100px, alors, 50 % équivaudra à 50px.
+
+Ces listes ne sont pas exhaustives, si vous voulez une liste plus exhaustive, je vous invite à aller consulter la doc de Mozilla.
+
+Maintenant qu’on a fait le tour des principales unités de mesure, comment choisir ? Un début de réponse dans la prochaine partie.
+
+II) Le Responsive Design
+Un site web Responsive est un site web qui s’adapte aux différents écrans des utilisateurs. Il vise à offrir une navigation confortable aussi bien sur pc que sur tablette ou smartphone.
+
+Dans le choix de vos unités de mesure, il est obligatoire de prendre en compte le responsive design.
+
+Pour faire cela, il est préférable d’utiliser les mesures relatives. Nous les avons vu dans la première partie de cet article. Ce sont toutes les unités qui ne sont pas absolues (incroyable non ?).
+
+Pour faire simple, si vous voulez un contenu responsive, évitez l’utilisation des pixels.
+
+Commençons par un exemple pour comprendre cela. Vous voulez que la largeur d’un de vos blocs de contenu fasse toute la largeur de votre écran et il s’avère que cet écran fait 1600px de largeur. Vous donnez naïvement à la propriété « width » la valeur de 1600px. Si maintenant, j’ai un écran d’une largeur, disons de 1900px, que se passera-t-il ?
+Vous l’avez compris, l’élément ne prendra que 1600px de largeur et non pas 100 %.
+Pour remédier à cela, il suffit juste de donner une valeur de 100 % à « width ».
+(Attention, comme dit précédemment, ce sera 100 % de l’élément parent donc, il faudra aussi que cet élément ait 100 % de largeur).
+
+Les pourcentages sont dans un cadre responsive indispensable, l’exemple ci-dessus peut aussi s’appliquer à « height » pour la hauteur.
+
+Les pourcentages sont aussi à privilégier pour les « margin » et « padding » même si dans certains cas, l’utilisation du pixel n’est pas forcément une mauvaise idée.
+
+En effet, on peut très bien utiliser les pixels dans un cadre responsive à condition d’y avoir bien réfléchi et de ne pas en abuser.
+
+On a aussi d’autres unités de mesure que j’adore utiliser parmi ceux-là, les unités de viewport (vh, vw) sont mes préférés.
+
+Comme dit dans la première partie, ces unités s’adaptent à la taille de l’écran et 1vh, par exemple, correspond à 1 % de la hauteur de l’écran. En disant cela, vous comprenez aisément pourquoi ils sont une arme très efficace dans un cadre responsive.
+
+Pour conclure cet article sur les unités de mesure en CSS, je dirais qu’il faut garder en tête que vous êtes libre d’utiliser chaque unité comme bon vous semble (dans les limites que permet chaque unités bien sûr). Il faut malgré tout garder en tête les différents supports utilisés par les utilisateurs de vos applications web. Le responsive Design est donc un élément important à prendre en compte et dans ce cadre, les unités relatives sont à privilégier.
+

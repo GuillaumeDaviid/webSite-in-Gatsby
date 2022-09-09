@@ -1,0 +1,86 @@
+---
+title: "Javascript : Faire apparaître un élément au défilement"
+date: "2021-10-30"
+slug: "javascript-faire-apparaitre-un-element-au-defilement"
+hero_image: "./scrollreveal.jpg"
+hero_image_alt: "A gray pitbull relaxing on the sidewalk with its tongue hanging out"
+hero_image_credit_text: "Christopher Ayme"
+hero_image_credit_link: "https://unsplash.com/photos/ocZ-_Y7-Ptg"
+---
+
+Aujourd’hui, il est de plus en plus fréquent de tomber sur des sites qui ont la particularité de faire apparaître leurs éléments au défilement de la page. Cette animation devient de plus en plus commune, il attire donc la curiosité et parfois même l’envie de la reproduire.
+
+Je vais donc vous faire découvrir un moyen de faire apparaître les éléments de vos pages au moment du scroll.
+
+Les prérequis :
+HTML → C’est la base des bases, connaître les balises les plus couramment utilisées suffira ici.
+Javascript → Il vous faudra connaître, là aussi, les bases de Javascript. Pas besoin d’être un crack, si vous savez, par exemple, utiliser des fonctions ou encore l’utilisation des classes, cela sera largement suffisant.
+Un éditeur de texte → Si vous remplissez les deux premiers prérequis, alors normalement, vous remplissez aussi celui-ci, mais au cas ou, utilisez celui avec lequel vous êtes le plus à l’aise. Si vous ne savez pas lequel utiliser, je peux vous conseiller Atom ou encore Vs Code.
+ScrollReveal :
+Pour faire apparaître un élément au défilement, nous allons utiliser une librairie javascript qui porte le nom de ScrollReveal.
+
+Comme son nom l’indique, elle permet de révéler un élément au scroll de manière très simple.
+J’ai fait le choix de vous présenter cette librairie, car c’est celle que j’utilise, mais sachez qu’il en existe d’autres. Il existe, d’ailleurs, d’autres manières de faire ce que nous voulons sans avoir à passer par une librairie.
+
+Pour ceux qui ne sont pas familiers avec les librairies Javascript, laissez-moi vous expliquer de quoi il s’agit.
+
+Pour faire simple, une librairie ou bibliothèque Javascript est un ensemble de fonctions pré-écrites dans le but d’être réutilisé. En gros, un développeur a rencontré un problème, il a trouvé une solution à ce problème. Il décide de partager cette solution à tout le monde.
+
+Bref, entrons enfin dans le vif du sujet.
+
+L’installation :
+Pour commencer, nous devons installer ScrollReveal.
+
+Il existe deux manières de faire :
+
+l’installer via la commande npm de Node.JS
+Utiliser un CDN(content delivery network) qui conservera pour nous les fichiers à utiliser sur un serveur. C’est cette solution que nous allons utiliser, déjà parce qu’elle ne demande aucune installation particulière sur notre machine, mais surtout, car c’est la solution recommandée par les développeurs de ScrollReveal.
+Pour ce faire, allez dans votre fichier HTML et ajouter une balise script. L’attribut src aura alors la valeur ci-dessous. C’est là que se trouve les fonctions dont nous allons avoir besoin.
+
+
+Vous allez pouvoir, maintenant, utiliser ScrollReveal dans votre projet.
+
+Démarrer avec ScrollReveal :
+Maintenant que l’installation est prête, nous pouvons commencer.
+
+Premièrement, créez un fichier javascript au nom de scrollReveal.js. C’est dans celui-ci que nous allons spécifier nos règles d’animation de chaque élément.
+
+Ensuite, il vous faudra importer ce fichier dans le HTML de votre projet, pour cela vous connaissez la démarche.
+
+<script  src="js/scrollReveal.js"></script>
+Maintenant, il va nous falloir animer un élément. Nous allons donc créer cet élément.
+
+
+Assurez-vous d’assigner une classe à notre paragraphe, cela aura son importance par la suite.
+
+Maintenant, c’est là qu’on commence à s’amuser.
+
+Allons dans notre fichier scrollReveal.js et collez le code ci-dessous.
+
+
+Si tout fonctionne normalement, quand vous rafraîchissez la page ou quand vous scrollez, notre paragraphe apparaît uniquement au moment où votre page arrive à sa hauteur.
+
+Détaillons un peu le code, la fonction ScrollReveal passe une méthode reveal qui elle-même prend comme argument la classe de l’élément que vous souhaitez animer (d’où l’importance de nommé une classe dans notre exemple). Vous pouvez modifier la valeur de la classe avec une autre existante, verrez cela modifiera aussi cet élément.
+
+Vous pouvez, bien sûr, animer plusieurs éléments à la fois.
+
+Félicitations, vous savez maintenant faire apparaître un élément au scroll du visiteur.
+
+Mais ScrollReveal ne se limite pas à cette simple règle, en effet, dans notre exemple, l’élément apparaît en venant de sa position initiale, mais comment faire si nous voulons que notre élément apparaisse en venant de bas de la page par exemple ?
+
+C’est ce que nous allons voir dans la prochaine partie.
+
+Approfondir ScrollReveal :
+Dans cette dernière partie, nous allons voir comment faire apparaître un élément au scroll, mais surtout à un endroit que sa position finale.
+
+Pour cela, reprenons notre exemple initial dans le HTML. Disons que nous voulons que le paragraphe apparaisse en venant du bas de notre page, mais pas de trop loin non plus… disons 100px.
+
+
+On peut remarquer qu’un nouvel argument a fait son apparition, détaillons cela.
+
+« origin » correspond à la position d’où démarrera l’animation. Ici, elle démarrera du bas pour arriver à sa position initiale. Mais vous pouvez, bien sûr, modifier son « origin » avec par exemple Top (haut), Left (gauche), Right (droite) …
+
+« distance » correspond, comme son nom l’indique, à la distance entre « l’origin » et position finale de l’élément. Dans notre exemple, l’élément animé commencera son animation 100px plus bas que sa position finale.
+
+Vous avez donc maintenant un plus large choix d’animation pour vos pages web. Il existe bien sur d’autres paramètres et arguments dont je vous laisse la liberté d’aller découvrir part vous-même maintenant que vous connaissez les bases de cette librairie.
+
