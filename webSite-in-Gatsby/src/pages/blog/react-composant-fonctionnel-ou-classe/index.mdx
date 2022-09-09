@@ -1,0 +1,94 @@
+---
+title: "React: Composant fonctionnel ou classe ?"
+date: "2022-05-24"
+slug: "react-composant-fonctionnel-ou-classe"
+hero_image: "./React.jpg"
+hero_image_alt: "A gray pitbull relaxing on the sidewalk with its tongue hanging out"
+hero_image_credit_text: "Christopher Ayme"
+hero_image_credit_link: "https://unsplash.com/photos/ocZ-_Y7-Ptg"
+---
+
+React est basé sur un système de composant, c’est-à-dire que notre application n’est rien d’autre qu’un tas de composants (ce n’est pas une insulte, je vous jure.).
+
+Quand on débute avec React.js, on se retrouve souvent devant de la documentation qui nous propose deux types de composant. Les composants fonctionnels à base, donc, de fonction et les composants de classe. Il peut alors être difficile de faire un choix entre les deux.
+
+Grace à cet article, vous pourrez y voir plus clair et faire un choix, nous rentrerons dans les spécificités de chacun et je vous y donnerez mon avis.
+
+Présentation
+Commençons par les composants Classe. Ils étaient les plus populaires au début de React. Il était courant d’entendre qu’ils offraient plus de fonctionnalité et de performance. D’ailleurs, au tout début de React, les classes étaient la seule façon de créer un composant.
+
+En 2015, sont arrivées les composantes fonctions et avec eux, leurs lots de fonctionnalité et de débat dans la communauté.
+
+En effet, certaines fonctionnalités et « pratiquent » sont propre à chacun. On peut par exemple parler des hooks qui sont réservé au composant fonctionnel dont reparlerons plus tard dans cet article.
+
+Mais la différence principale réside dans la syntaxe de chacun.
+
+Syntaxe
+Les deux syntaxes sont assez différentes :
+
+Voici la syntaxe pour la création d’un composant classe :
+
+
+Comme vous pouvez le constater, pour créer un composant à base de classe, il faut étendre React.component.
+
+La méthode de rendu (render) permet d’afficher alors le JSX à l’intérieur du composant.
+
+Passons désormais à la syntaxe d’un composant à base de fonction :
+
+
+Pour créer un composant fonctionnel, il faut utiliser une simple fonction JavaScript qui retourne du JSX.
+
+Comme dit précédemment, la syntaxe n’est pas la seule chose qui diffère entre les deux, passons donc à une liste non-exhaustive des différences existante.
+
+Autres différences
+Il existe de nombreuses différences entre les composants fonctionnels et de classe.
+
+La première et sûrement la plus marquante est l’utilisation des hooks.
+
+En effet, les hooks qui sont apparu avec la version 16.8.0 de React, ne sont utilisable uniquement avec les composantes fonctions.
+
+L’absence de cette fonctionnalité qui offre un large éventail de possibilité est donc un gros manque pour les classes et l’une des raisons principales de sa baisse en popularité.
+
+Par exemple, cela se ressent immédiatement dans la gestion du state qui diffère entre les deux composants.
+
+Les composants fonctionnels vont utiliser le hook useState alors que les composant à base de classe utilisent this.state . A noter qu’il va falloir implémenter le constructor et appeler super(props) sinon l’état local d’un composant classe sera «undefined».
+
+État pour un composant fonction :
+
+
+État pour un composant classe :
+
+
+Parmi les autres différences, moins notables, certes, on peut aussi noter le cycle de vie.
+
+Les méthodes de cycle de vie sont exclusives aux composants de classe. Ils servent généralement à libérer de l’espace quand un composant est détruit.
+
+Exemple d’utilisation :
+
+
+La méthode componentDidMount() est appelé au moment de l’injection du composant dans le DOM. Quand on souhaite retirer un élément du DOM, il existe la méthode componentWillUnmount().
+
+Mais comment faire la même chose avec un composant fonction ?
+
+Avec un composant fonction, on utilisera useEffect (encore un hook).
+
+Exemple :
+
+
+Vous remarquerez qu’on utilise comme argument les crochets, ou plutôt un tableau vide. Cela signifie qu’il sera appelé au moment de l’injection du composant dans le DOM comme avec la méthode précédente.
+
+Avant de conclure, sachez qu’il y a d’autres différences mineure que je n’ai pas exploré ici.
+
+Conclusion
+Maintenant, qu’on a exploré les différences majeures entre chaque type de composant, il est l’heure du choix.
+
+Ce choix doit être personnel, comme vous pouvez le voir, ils ont chacun des avantages et des inconvénients.
+
+Même si le composant Fonction gagne énormément en popularité ces derniers temps, les classes sont toujours très utilisé dans le milieu professionnel et sur les projets plus anciens. Gardez ça en tête si vous optez pour les composantes fonctions.
+
+Ne mettez pas de côté les composants de classe, surtout si vous ambitionnez d’intégrer le monde professionnel. Connaître les deux vous sera un atout pour ne pas dire qu’il est quasi obligatoire.
+
+Personnellement, j’utilise principalement les composants fonction de par leur jeunesse, mais aussi par rapport à la lisibilité du code qui selon moi est supérieur aux composant classe.
+
+Bref, pour terminer, testez les deux et faite votre choix !
+

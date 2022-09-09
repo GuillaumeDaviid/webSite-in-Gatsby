@@ -1,0 +1,62 @@
+---
+title: "CSS GRID POUR LES DÉBUTANTS"
+date: "2022-06-15"
+slug: "css-grid-pour-les-debutants"
+hero_image: "./css_grid.jpg"
+hero_image_alt: "A gray pitbull relaxing on the sidewalk with its tongue hanging out"
+hero_image_credit_text: "Christopher Ayme"
+hero_image_credit_link: "https://unsplash.com/photos/ocZ-_Y7-Ptg"
+---
+
+Il y a quelques semaines, je vous parlai de flexbox et à quel point il avait révolutionné la mise en page en CSS. Aujourd’hui, je vais vous parler de son « cousin » css grid, une autre méthode de mise en page pour vos applications web qui est d’ailleurs le tout premier « module » de mise en page crée.
+
+CSS GRID est un système de mise en page basé sur une grille en 2 dimensions. Il permet d’organiser le contenu en plusieurs lignes ou en plusieurs colonnes.
+
+Avant d’entrer dans le vif du sujet, sachez que les grilles CSS sont prises en charge par la majorité des navigateurs moderne. Vous n’aurez donc pas à vous soucier de préfixe pour pouvoir les faire fonctionner.
+
+Pour cet article, nous allons nous baser sur le template HTML ci-dessous :
+
+
+Pour pouvoir utiliser css grid, il faut définir le conteneur comme grille avec display : grid. Vous pouvez aussi définir la taille de vos lignes avec grid-template-rows et la taille de vos colonnes avec grid-template-column, puis placer vos éléments dans la grille avec grid-column et grid-row.
+
+Commençons par un premier bout de code.
+
+
+Nous donnons la propriété display : grid à l’élément container qui a pour effet de générer une grille et la propriété grid-template-columns qui organise cette grille en 3 colonnes. La valeur passée à la propriété grid-template-columns est une fonction qui permet de répéter un certain nombre de fois un « fragment » . Ici, dans notre cas, donc, cela crée 3 colonnes d’une taille de 1fr.
+
+Pour bien comprendre la propriété grid-template-columns, penons un autre exemple.
+
+
+Ce bout de code aura pour effet de créer deux colonnes de 100px chacune. À noter que s’ils ont une largeur supérieure à 100px et que nous n’avons implémenté un gap entre eux, ils se chevaucheront.
+
+On pourrait aussi ajouter un grid-gap qui va créer un gap entre nos éléments enfants et un grid-auto-row qui va modifier la taille des lignes de notre grille.
+
+CSS Grid nous offre aussi des propriétés applicables à nos éléments qui nous permettent de modifier leurs positionnements par défaut dans la grille.
+
+Avant de partir sur un exemple, rappelons que nos éléments sont sur 3 colonnes et qu’ils sont 2 par colonnes.
+
+Nous allons modifier l’emplacement de notre élément « green ».
+
+
+Par défaut, notre élément « green » se situe dans la deuxième colonne, mais avec ce code, il se trouvera dans la première. On pourrait alors penser qu’il ne reste plus q’un seul élément dans la 2éme colonne ou qu’un élément de la première colonne a switché dans la deuxième. En réalité, la première colonne est désormais constituée de 3 éléments, la deuxième de 2 éléments et la troisième d’un seul élément.
+
+La propriété grid-column-start permet, vous l’aurez compris, de définir la position du début d’un élément dans une grille en définissant la colonne occupée.
+
+Il existe d’autres propriétés permettant cela dont notamment grid-column-end qui permet de définir la position de fin d’un élément dans une grille en définissant la colonne occupée, grid-row-start ou encore grid-row-end qui à la même fonction, mais pour les lignes d’une grille.
+
+Vous pouvez bien sûr combiner ces différentes propriétés, mais je ne rentrerai pas dans les détails maintenant.
+
+Avant de conclure, passons aux propriétés grid-column et grid-row.
+
+
+Une petite question, ou se trouvera dans la grille notre élément ?
+
+Les propriété grid-column et grid-row permettent de définir l’emplacement d’un élément dans une grille. Vous l’avez compris, ce sont des propriétés raccourci. Elles permettent la même chose que les propriétés précédente.
+
+Pour répondre à la question, l’élément « green » sera le premier élément de la première colonne. C’est l’élément « red » qui prendre sa place dans la deuxième colonne.
+
+CONCLUSION
+Dans cet article, nous avons vu les possibilités que nous offre CSS Grid. Si vous voulez creuser le sujet, je vous conseille comme d’habitude, d’aller voir la documentation.
+
+Avant de finir, je tiens à rappeler quelque chose. On entend souvent ici et là qu’il y aurait une opposition entre flexbox et css grid (oui, j’ai déjà lu une phrase dans une offre d’emploi que le sous-entendais). Sachez qu’il n’y a pas d’opposition à avoir, ils sont complémentaires et je vous conseille vivement d’utiliser les deux.
+

@@ -1,0 +1,31 @@
+---
+title: "Pourquoi j’évite le nesting avec SASS ?"
+date: "2022-08-01"
+slug: "pourquoi-j-evite-le-nesting-avec-sass"
+hero_image: "./sass-logo.png"
+hero_image_alt: "A gray pitbull relaxing on the sidewalk with its tongue hanging out"
+hero_image_credit_text: "Christopher Ayme"
+hero_image_credit_link: "https://unsplash.com/photos/ocZ-_Y7-Ptg"
+---
+
+Le nesting est considéré comme l’un des arguments à l’utilisation de SASS ou d’autre préprocesseurs. Pourtant il est aussi l’une des ces plus grosses faiblesses, et je vous explique pourquoi dans cet article.
+
+Si vous êtes ici, vous savez sûrement ce qu’est un préprocesseur, mais au cas ou, une petite définition :
+
+Un préprocesseur CSS est un programme qui permet de générer du CSS à partir d’une autre syntaxe. Ils permettent d’ajouter nombre de fonctionnalité. Il en existe un certain nombre tel que LESS, STYLUS ou le plus populaire, SASS. A savoir qu’ils utilisent généralement une extension .scss.
+
+Mais alors, revenons à nos moutons. Pourquoi je vous déconseille d’utiliser le nesting?
+
+Le nesting est le fait d’imbriquer des sélecteurs css entre eux, comme dit en introduction, c’est l’un des points forts du SASS. Il est censé apporter une meilleure maintenabilité et de faire gagner du temps aux développeurs.
+
+Mais en réalité, le nesting peut être un frein à la maintenance de votre code. En effet, prenez un de vos vieux projets utilisant le nesting, un gros projet que vous avez terminé et auquel vous n’avez plus touché depuis longtemps. Même en respectant une organisation des fichiers drastiques et la méthodologie BEM, il vous est sûrement difficile de vous relire, en tout cas, c’est ce qui m’est arrivé.
+
+Maintenant, imaginez que vous intégrer un nouveau développeur à votre équipe, il doit alors intervenir sur votre code et vous l’avez compris, le nesting peut alors le retarder dans ses taches, le temps de comprendre l’imbrication.
+
+Quelle solution ?
+On a souvent tendance à abuser du nesting, certains d’entre vous d’ailleurs n’auront aucun problème avec le nesting et dans ce cas-là ne vous en privez pas. Mais pour ceux qui ont fait les mêmes observations que moi, sachez qu’il y a une solution.
+
+La première serait de ne pas utiliser du tout le nesting. En réalité c’est une fausse bonne idée, le nesting apporte des avantages et il serait bête de s’en priver. Alors, ma solution est d’utiliser le nesting par parcimonie, c’est-à-dire d’éviter d’utiliser une seule imbrication pour une partie de vos pages.
+
+En gros, l’idée est de décomposer votre code scss en plusieurs parties et d’utiliser le nesting uniquement dans ces parties. Par exemple, sur une page contenant un formulaire, un carrousel et une zone de texte, l’idée serait de créer 3 imbrications pour les 3 parties de la page au lieu d’utiliser une seule et unique comme je le vois très souvent.
+
