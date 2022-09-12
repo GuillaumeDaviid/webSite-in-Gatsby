@@ -1,0 +1,28 @@
+.blog {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    justify-items: center;
+    margin-top: 25px;
+    justify-content: center;
+
+    &_article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 30vw;
+        margin-top: 50px;
+    }
+
+    &_image {
+        max-width: 250px;
+    }
+
+    &_excerpt {
+        color: black;
+    }
+
+    &_title {
+        font-size: 2rem;
+    }
+}
