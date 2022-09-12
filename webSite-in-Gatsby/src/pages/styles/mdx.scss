@@ -1,0 +1,12 @@
+.mdx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &_content {
+        max-width: 60vw;
+        color: black;
+        font-size: 1.2rem;
+    }
+}
