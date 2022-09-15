@@ -25,7 +25,6 @@
 
         &-elt {
             position: relative;
-            margin-top: 50px;
             display: flex;
             
             &-item {
@@ -49,6 +48,7 @@
         max-height: 100px !important;
     }
     &_link {
+        font-size: 2rem;
         color: #222222;
     }
 }

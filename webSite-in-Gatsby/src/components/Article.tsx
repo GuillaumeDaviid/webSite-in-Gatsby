@@ -77,7 +77,7 @@ function handleClickPrevious() {
               slug
               featuredImage {
                 childImageSharp {
-                  gatsbyImageData(width: 250)
+                  gatsbyImageData(height: 100)
                 }
               }
             }
@@ -88,18 +88,18 @@ function handleClickPrevious() {
       }
       `}
       render={data => (
-        <div>
-          <div>{data.allMdx.nodes.map((node:any) => (
-              <article key={node.id} className="blog_article">
+        <div >
+          <div className='Article_items-elt'>{data.allMdx.nodes.map((node:any) => (
+              <div className="Article_items-elt-item">
             <GatsbyImage image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt='asdsf' className='blog_image'/>
-            <p>{node.frontmatter.date}</p>
-            <h2 className="blog_title">
+            
+            <h2 className='item_link'>
               <Link to={`/blog/${node.frontmatter.slug}`}>
                 {node.frontmatter.title}
               </Link>
             </h2>
-            <p className='blog_excerpt'>{node.excerpt}</p>
-          </article>
+           
+         </div>
         ))}</div>
         </div>
       )}
