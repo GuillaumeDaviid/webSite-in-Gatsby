@@ -14,7 +14,7 @@ export default function Article({data}:any) {
   function handleClickNext() {
     let carrousel = document.getElementById('carrousel');
     if (carrousel){
-        if (nbr < 7){
+        if (nbr < 8){
             setNbr(nbr + 1);
             const newp = p - 1
             setp(newp);
@@ -69,7 +69,7 @@ function handleClickPrevious() {
 <StaticQuery
       query={graphql`
       query {
-        allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+        allMdx(sort: {fields: frontmatter___date, order: DESC}, limit: 10) {
           nodes {
             frontmatter {
               date(formatString: "MMMM D, YYYY")
@@ -100,7 +100,8 @@ function handleClickPrevious() {
             </h2>
            
          </div>
-        ))}</div>
+        ))}<div className='Article_more'><Link to={'/blog'}>Voir plus d'articles</Link></div>
+        </div>
         </div>
       )}
     />

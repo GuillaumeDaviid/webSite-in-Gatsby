@@ -32,6 +32,15 @@
             }
         }
     }
+
+    &_more {
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 25vw;
+        color: #337ab7;
+    }
 }
 
 .right {
