@@ -11,6 +11,7 @@
     &_items {
         min-height: 300px;
         overflow: hidden;
+        margin-bottom: -20px;
 
         &-btn {
             z-index: 99;
@@ -25,13 +26,21 @@
 
         &-elt {
             position: relative;
-            margin-top: 50px;
             display: flex;
             
             &-item {
                 min-width: 25vw;
             }
         }
+    }
+
+    &_more {
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 25vw;
+        color: #337ab7;
     }
 }
 
@@ -49,6 +58,7 @@
         max-height: 100px !important;
     }
     &_link {
+        font-size: 2rem;
         color: #222222;
     }
 }
