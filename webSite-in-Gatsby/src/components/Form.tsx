@@ -1,9 +1,14 @@
 import * as React from 'react'
 import './styles/Form.scss'
 import { useState } from 'react'
-import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
+import axios from "axios";
+import {
+  GoogleReCaptchaProvider,
+  GoogleReCaptcha
+} from "react-google-recaptcha-v3";
 
 export default function Form() {
+    
     return(
         <div className="Form">
             <section id="contact">
@@ -33,28 +38,34 @@ export default function Form() {
             
 
             <div className="Form_content-form">
+            <GoogleReCaptchaProvider reCaptchaKey='6LfYwUEcAAAAAMDY20qhYUpD-D-ng45mPmV25S7M'>
                 <form id="formid" method="post" action='https://getform.io/f/ca7fb4f1-379c-4242-a03a-93dd5d1d0078' /*ou https://www.guillaumedavid.com/api/recaptcha.php  ../api/recaptcha.php */>
                     <div className="row_form">
 
                     <div >
-                        <input className="row_form-name" type="text" name="user_name" placeholder="Nom"/>
+                        <input className="row_form-name" type="text" id="name" placeholder="Nom" required={true} name="name" />
                     </div>
 
                     <div >
-                        <input className="row_form-mail" type="email" name="user_mail" placeholder="Email"/>
+                        <input className="row_form-mail" type="email" name="email" required={true} placeholder="Email"/>
                     </div>
 
                     </div>
 
                     <div>
-                        <textarea className="row_form-msg" name="user_message" placeholder="Message"/>
+                        <textarea className="row_form-msg" name="message" required={true} placeholder="Message"/>
                     </div>
 
                     <div className="container-btn">
-                    <input type="submit" value="ENVOYER" className="btn-form g-recaptcha"/>
+
+                    <input type="submit" value="ENVOYER" className="btn-form"/>
                     
                     </div>
+
+                
+
                 </form>
+                </GoogleReCaptchaProvider>
             </div>
 
             </div>
