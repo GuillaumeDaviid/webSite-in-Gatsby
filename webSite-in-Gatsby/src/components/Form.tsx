@@ -31,7 +31,7 @@ export default function Form() {
             
 
             <div className="Form_content-form">
-                <form id="formid" method="post" action='../php/recaptcha.php'>
+                <form id="formid" method="post" action='../api/recaptcha.php' /*ou https://www.guillaumedavid.com/api/recaptcha.php */>
                     <div className="row_form">
 
                     <div >
