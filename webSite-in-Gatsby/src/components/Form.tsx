@@ -1,5 +1,7 @@
 import * as React from 'react'
 import './styles/Form.scss'
+import { useState } from 'react'
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 
 export default function Form() {
     return(
@@ -31,7 +33,7 @@ export default function Form() {
             
 
             <div className="Form_content-form">
-                <form id="formid" method="post" action='../api/recaptcha.php' /*ou https://www.guillaumedavid.com/api/recaptcha.php */>
+                <form id="formid" method="post" action='https://getform.io/f/ca7fb4f1-379c-4242-a03a-93dd5d1d0078' /*ou https://www.guillaumedavid.com/api/recaptcha.php  ../api/recaptcha.php */>
                     <div className="row_form">
 
                     <div >
@@ -49,7 +51,8 @@ export default function Form() {
                     </div>
 
                     <div className="container-btn">
-                        <input className="btn-form" type="submit" value="ENVOYER" />
+                    <input type="submit" value="ENVOYER" className="btn-form g-recaptcha"/>
+                    
                     </div>
                 </form>
             </div>
@@ -57,5 +60,7 @@ export default function Form() {
             </div>
             </section>
         </div>
+
+        
     )
 }
