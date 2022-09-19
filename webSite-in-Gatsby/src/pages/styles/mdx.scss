@@ -8,5 +8,18 @@
         max-width: 60vw;
         color: black;
         font-size: 1.2rem;
+
+        a {
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        pre {
+            background-color: rgb(240, 240, 240);
+        }
     }
 }
