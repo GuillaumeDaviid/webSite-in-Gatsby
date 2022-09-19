@@ -11,6 +11,7 @@
 
         a {
             text-decoration: underline;
+            font-weight: bold;
         }
 
         h2 {
@@ -20,6 +21,11 @@
 
         pre {
             background-color: rgb(240, 240, 240);
+        }
+
+        p {
+            color: rgb(56, 56, 56);
+            font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
         }
     }
 }
