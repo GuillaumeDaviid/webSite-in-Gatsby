@@ -22,6 +22,14 @@ const config: GatsbyConfig = {
             maxWidth: 1200,
           },
         },
+        {
+          resolve: "gatsby-remark-embed-gist",
+          options: {
+
+            // the github handler whose gists are to be accessed
+            username: "GuillaumeDaviid",
+          }
+        },
       ],
     },
   },

@@ -42,6 +42,7 @@ Pour lire l’état, il suffit généralement de mettre entre crochets le nom de
 <p>L’état local est égal à : {state}</p>
 ```
 
+
 Pour modifier l’état, il faut faire appel à la fonction setState comme ci-dessous.
 
 ```markdown	
@@ -56,15 +57,7 @@ Avant de passer à la suite, sachez qu’il est bien sur possible d’utiliser p
 
 *UseEffect* est, comme son nom l’indique, un hook d’effet. Il permet de déclencher une fonction lorsque l’état du composant change. Cela permet d’appliquer des effets de bord tel que modifier le DOM, changer le titre d’un document…
 
-```markdown	
-useEffect(() => {
-const timer = window.setInterval(() => {
-setState(n => n + 1), 1000)
-return function () {
-clearInterval(timer)
-}
-}, [])
-```
+`gist:GuillaumeDaviid/f1864897fb4a34964f12a0d2caa02911`
 
 Si on analyse l’exemple ci-dessus, on remarque que useEffect prend deux paramètres, la fonction qui sera exécutée quand une dépendance du composant changera et ce même tableau de dépendance (vide dans notre exemple).
 
@@ -76,30 +69,13 @@ Avec **React**, les props sont des données que se passent les composants (du pa
 
 Avant de pouvoir utiliser useContext dans vos composants, il va déjà falloir créer « votre context ». C’est une fonction qui va se charger de traiter les données et de fournir un provider.
 
-```markdown	
-import { createContext } from 'react'
-
-export const YourContext = createContext();
-export const YourProvider = ({children})  => {
-// traitement de vos data
-return (
-<YourProvider.Provider value = {{value}}>
-{children}
-</YourProvider.Provider>
-)}
-```
+`gist:GuillaumeDaviid/da85da7fee4a02c25ee62a103810a51a`
 
 Comme vous pouvez le remarquer, on utilise createContext, une fonction qui permet de créer un context.
 
 Ensuite, il va falloir englober les composants qui ont besoin de ces valeurs avec le provider crée ci-dessus.
 
-```markdown	
-<YourProvider>
-<Header />
-<Home />
-<Footer />
-</YourProvider>
-```
+`gist:GuillaumeDaviid/9c8dbc705e1a75b43549095f48a9e9cb`
 
 Dans un premier temps, nous devons importer le hook, mais aussi le context. Ensuite, nous recouperons la valeur que nous retourne notre context, ici « value ».
 
@@ -116,11 +92,7 @@ En effet, créer vos hooks permet de reproduire une fonctionnalité d’un compo
 
 La création d’un hook se fait sous la forme de fonction, tout comme les hooks par défaut, il faudra ensuite les importer pour pouvoir les utiliser.
 
-```markdown	
-Export fonction useMyHook(param) {
-// traitement
-}
-```
+`gist:GuillaumeDaviid/a6314596d2e3dc5998dd636d48f1fdc9`
 
 ## Conclusion
 Le but de cet article était de vous présenter les hooks.

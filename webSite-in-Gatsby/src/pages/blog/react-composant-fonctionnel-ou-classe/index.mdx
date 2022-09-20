@@ -28,13 +28,7 @@ Les deux syntaxes sont assez différentes :
 
 Voici la syntaxe pour la création d’un composant classe :
 
-```markdown
-class Exemple extends React.Component {
-  render() {
-    return <h1>Hello World</h1>;
-  }
-}
-```
+`gist:GuillaumeDaviid/7fc55a97fce49d73e4bac34ddb133018`
 
 Comme vous pouvez le constater, pour créer un composant à base de classe, il faut étendre React.component.
 
@@ -42,11 +36,7 @@ La méthode de rendu (render) permet d’afficher alors le JSX à l’intérieur
 
 Passons désormais à la syntaxe d’un composant à base de fonction :
 
-```markdown
-function Exemple(props) {
-  return <h1>Hello World</h1>;
-}
-```
+`gist:GuillaumeDaviid/8fbdb406e1801a56d6cd32c45b7ea84a`
 
 Pour créer un composant fonctionnel, il faut utiliser une simple fonction JavaScript qui retourne du JSX.
 
@@ -67,39 +57,11 @@ Les composants fonctionnels vont utiliser le hook useState alors que les composa
 
 État pour un composant fonction :
 
-```markdown
-function Example() {
-const [count, setCount] = useState(0);
-return (
-<div>
-<p>count: {count}</p>
-<button onClick={() => setCount(count + 1)}>Click</button>
-</div>
-);
-};
-```
+`gist:GuillaumeDaviid/bf3fb454b9b6b56d6666f9e792ef878e`
 
 État pour un composant classe :
 
-```markdown
-class Example extends React.Component {
-constructor(props) {
-super(props);
-this.state = {
-count: 0
-};
-}
-render() {
-return (
-<div>
-<p>count: {this.state.count} times</p>
-<button onClick={() => this.setState({ count: this.state.count + 1 })}>
-Click
-</button>
-</div>
-);
-}}
-```
+`gist:GuillaumeDaviid/31c509a34ced7dbd3901902ae7044c70`
 
 Parmi les autres différences, moins notables, certes, on peut aussi noter le cycle de vie.
 
@@ -107,15 +69,7 @@ Les méthodes de cycle de vie sont exclusives aux composants de classe. Ils serv
 
 Exemple d’utilisation :
 
-```markdown
-class Exemple extends React.Component {
-componentDidMount() {
-console.log("Hello World");
-}
-render() {
-return <h1>Hello World</h1>;
-}}
-```
+`gist:GuillaumeDaviid/dcb7d7792a5f161c4c4306c84d6ba464`
 
 La méthode *componentDidMount()* est appelé au moment de l’injection du composant dans le DOM. Quand on souhaite retirer un élément du DOM, il existe la méthode *componentWillUnmount()*.
 
@@ -125,14 +79,7 @@ Avec un composant fonction, on utilisera useEffect (encore un hook).
 
 Exemple :
 
-```markdown
-function Exemple () {
-useEffect(() => {
-console.log("Hello World");
-}, []);
-return <h1>Hello World</h1>;
-};
-```
+`gist:GuillaumeDaviid/d71dd2e36a504ba8d47cf43fef285c5a`
 
 Vous remarquerez qu’on utilise comme argument les crochets, ou plutôt un tableau vide. Cela signifie qu’il sera appelé au moment de l’injection du composant dans le DOM comme avec la méthode précédente.
 

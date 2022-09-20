@@ -16,42 +16,20 @@ Avant d’entrer dans le vif du sujet, sachez que les grilles CSS sont prises en
 
 Pour cet article, nous allons nous baser sur le template HTML ci-dessous :
 
-```markdown
-<div class="container">
-  <div class="red">rouge</div>
-  <div class="green">vert</div>
-  <div class="yellow">jaune</div>
-  <div class="black">noir</div>
-  <div class="orange">orange</div>
-  <div class="white">blanc</div>
-</div>
-```
 `gist:GuillaumeDaviid/ede74267f9699380985a691da02934d1`
-`gist:Gaafar/5f10e86ab571dfdad7084c5df0663435`
-
 
 
 Pour pouvoir utiliser **css grid**, il faut définir le conteneur comme grille avec *display : grid*. Vous pouvez aussi définir la taille de vos lignes avec *grid-template-rows* et la taille de vos colonnes avec *grid-template-column*, puis placer vos éléments dans la grille avec *grid-column* et *grid-row*.
 
 Commençons par un premier bout de code.
 
-```markdown
-.container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-```
+`gist:GuillaumeDaviid/db41ff864877152984e73f7d7dea7a5d`
 
 Nous donnons la propriété display : grid à l’élément container qui a pour effet de générer une grille et la propriété grid-template-columns qui organise cette grille en 3 colonnes. La valeur passée à la propriété grid-template-columns est une fonction qui permet de répéter un certain nombre de fois un « fragment » . Ici, dans notre cas, donc, cela crée 3 colonnes d’une taille de 1fr.
 
 Pour bien comprendre la propriété *grid-template-columns*, penons un autre exemple.
 
-```markdown
-.container{
-  display: grid;
-  grid-template-columns: 100px 100px;
-}
-```
+`gist:GuillaumeDaviid/322a981b398adf04eccb694cc2033724`
 
 Ce bout de code aura pour effet de créer deux colonnes de 100px chacune. À noter que s’ils ont une largeur supérieure à 100px et que nous n’avons implémenté un gap entre eux, ils se chevaucheront.
 
@@ -63,12 +41,7 @@ Avant de partir sur un exemple, rappelons que nos éléments sont sur 3 colonnes
 
 Nous allons modifier l’emplacement de notre élément « green ».
 
-```markdown
-.green {
-  background-color: green;
-  grid-column-start: 1;
-}
-```
+`gist:GuillaumeDaviid/460fdb963dbf4431f895a7a73b8088c5`
 
 Par défaut, notre élément « green » se situe dans la deuxième colonne, mais avec ce code, il se trouvera dans la première. On pourrait alors penser qu’il ne reste plus q’un seul élément dans la 2éme colonne ou qu’un élément de la première colonne a switché dans la deuxième. En réalité, la première colonne est désormais constituée de 3 éléments, la deuxième de 2 éléments et la troisième d’un seul élément.
 
@@ -80,6 +53,7 @@ Vous pouvez bien sûr combiner ces différentes propriétés, mais je ne rentrer
 
 Avant de conclure, passons aux propriétés *grid-column* et *grid-row*.
 
+`gist:GuillaumeDaviid/d765921408a65bce35dce58ace67bb1e`
 
 Une petite question, ou se trouvera dans la grille notre élément ?
 
