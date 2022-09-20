@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import type { HeadFC } from "gatsby"
 import { GatsbyImage } from 'gatsby-plugin-image'
 import Layout from '../../components/Layout'
+import Footer from '../../components/Footer'
 import '../styles/mdx.scss'
 
 
@@ -16,6 +17,7 @@ const BlogPost = ({ data, children }:any) => {
       {children}
       </div>
       </div>
+      <Footer />
     </Layout>
   )
 }
