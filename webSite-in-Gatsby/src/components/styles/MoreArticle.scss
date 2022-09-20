@@ -1,0 +1,20 @@
+.MoreArticle {
+    margin-bottom: 50px;
+    &_items {
+        &-elt {
+            display: flex;
+            justify-content: space-between;
+
+            &-item {
+                min-width: 24vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        
+    }
+}

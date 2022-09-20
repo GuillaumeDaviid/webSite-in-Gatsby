@@ -4,6 +4,7 @@ import type { HeadFC } from "gatsby"
 import { GatsbyImage } from 'gatsby-plugin-image'
 import Layout from '../../components/Layout'
 import Footer from '../../components/Footer'
+import MoreArticle from '../../components/MoreArticle'
 import '../styles/mdx.scss'
 
 
@@ -16,7 +17,12 @@ const BlogPost = ({ data, children }:any) => {
       <div className='mdx_content'>
       {children}
       </div>
+      <div className='mdx_more'>
+        Voir plus d'articles :
       </div>
+      </div>
+      <MoreArticle />
+      
       <Footer />
     </Layout>
   )
@@ -39,7 +45,7 @@ query ($id: String) {
 }
 `
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <title>Guillaume David - </title>
 
 
 export default BlogPost
