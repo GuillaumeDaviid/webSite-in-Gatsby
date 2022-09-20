@@ -4,18 +4,17 @@ date: "2022-05-24"
 slug: "react-composant-fonctionnel-ou-classe"
 featuredImage: "./React.jpg"
 hero_image: "./React.jpg"
-hero_image_alt: "A gray pitbull relaxing on the sidewalk with its tongue hanging out"
-hero_image_credit_text: "Christopher Ayme"
-hero_image_credit_link: "https://unsplash.com/photos/ocZ-_Y7-Ptg"
+hero_image_alt: "React Composant"
+hero_image_credit_text: "React"
 ---
 
-React est basé sur un système de composant, c’est-à-dire que notre application n’est rien d’autre qu’un tas de composants (ce n’est pas une insulte, je vous jure.).
+**React** est basé sur un système de composant, c’est-à-dire que notre application n’est rien d’autre qu’un tas de composants (ce n’est pas une insulte, je vous jure.).
 
-Quand on débute avec React.js, on se retrouve souvent devant de la documentation qui nous propose deux types de composant. Les composants fonctionnels à base, donc, de fonction et les composants de classe. Il peut alors être difficile de faire un choix entre les deux.
+Quand on débute avec **React.js**, on se retrouve souvent devant de la documentation qui nous propose deux types de composant. Les composants fonctionnels à base, donc, de fonction et les composants de classe. Il peut alors être difficile de faire un choix entre les deux.
 
 Grace à cet article, vous pourrez y voir plus clair et faire un choix, nous rentrerons dans les spécificités de chacun et je vous y donnerez mon avis.
 
-Présentation
+## Présentation
 Commençons par les composants Classe. Ils étaient les plus populaires au début de React. Il était courant d’entendre qu’ils offraient plus de fonctionnalité et de performance. D’ailleurs, au tout début de React, les classes étaient la seule façon de créer un composant.
 
 En 2015, sont arrivées les composantes fonctions et avec eux, leurs lots de fonctionnalité et de débat dans la communauté.
@@ -24,11 +23,12 @@ En effet, certaines fonctionnalités et « pratiquent » sont propre à chacun. 
 
 Mais la différence principale réside dans la syntaxe de chacun.
 
-Syntaxe
+## Syntaxe
 Les deux syntaxes sont assez différentes :
 
 Voici la syntaxe pour la création d’un composant classe :
 
+`gist:GuillaumeDaviid/7fc55a97fce49d73e4bac34ddb133018`
 
 Comme vous pouvez le constater, pour créer un composant à base de classe, il faut étendre React.component.
 
@@ -36,12 +36,13 @@ La méthode de rendu (render) permet d’afficher alors le JSX à l’intérieur
 
 Passons désormais à la syntaxe d’un composant à base de fonction :
 
+`gist:GuillaumeDaviid/8fbdb406e1801a56d6cd32c45b7ea84a`
 
 Pour créer un composant fonctionnel, il faut utiliser une simple fonction JavaScript qui retourne du JSX.
 
 Comme dit précédemment, la syntaxe n’est pas la seule chose qui diffère entre les deux, passons donc à une liste non-exhaustive des différences existante.
 
-Autres différences
+## Autres différences
 Il existe de nombreuses différences entre les composants fonctionnels et de classe.
 
 La première et sûrement la plus marquante est l’utilisation des hooks.
@@ -56,9 +57,11 @@ Les composants fonctionnels vont utiliser le hook useState alors que les composa
 
 État pour un composant fonction :
 
+`gist:GuillaumeDaviid/bf3fb454b9b6b56d6666f9e792ef878e`
 
 État pour un composant classe :
 
+`gist:GuillaumeDaviid/31c509a34ced7dbd3901902ae7044c70`
 
 Parmi les autres différences, moins notables, certes, on peut aussi noter le cycle de vie.
 
@@ -66,8 +69,9 @@ Les méthodes de cycle de vie sont exclusives aux composants de classe. Ils serv
 
 Exemple d’utilisation :
 
+`gist:GuillaumeDaviid/dcb7d7792a5f161c4c4306c84d6ba464`
 
-La méthode componentDidMount() est appelé au moment de l’injection du composant dans le DOM. Quand on souhaite retirer un élément du DOM, il existe la méthode componentWillUnmount().
+La méthode *componentDidMount()* est appelé au moment de l’injection du composant dans le DOM. Quand on souhaite retirer un élément du DOM, il existe la méthode *componentWillUnmount()*.
 
 Mais comment faire la même chose avec un composant fonction ?
 
@@ -75,12 +79,13 @@ Avec un composant fonction, on utilisera useEffect (encore un hook).
 
 Exemple :
 
+`gist:GuillaumeDaviid/d71dd2e36a504ba8d47cf43fef285c5a`
 
 Vous remarquerez qu’on utilise comme argument les crochets, ou plutôt un tableau vide. Cela signifie qu’il sera appelé au moment de l’injection du composant dans le DOM comme avec la méthode précédente.
 
 Avant de conclure, sachez qu’il y a d’autres différences mineure que je n’ai pas exploré ici.
 
-Conclusion
+## Conclusion
 Maintenant, qu’on a exploré les différences majeures entre chaque type de composant, il est l’heure du choix.
 
 Ce choix doit être personnel, comme vous pouvez le voir, ils ont chacun des avantages et des inconvénients.

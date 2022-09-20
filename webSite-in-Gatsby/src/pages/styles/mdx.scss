@@ -3,10 +3,36 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 
     &_content {
-        max-width: 60vw;
+        max-width: 55vw;
         color: black;
         font-size: 1.2rem;
+
+        a {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        pre {
+            background-color: rgb(240, 240, 240);
+        }
+
+        p {
+            color: rgb(56, 56, 56);
+            font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+        }
+    }
+
+    &_more {
+        margin-top: 25px;
+        font-size: 2rem;
+        color: black;
     }
 }

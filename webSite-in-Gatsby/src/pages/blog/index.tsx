@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import '../styles/index.scss'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import Layout from '../../components/Layout'
+import Footer from '../../components/Footer'
 
 const BlogPage = ({data}:any) => {
   
@@ -25,6 +26,7 @@ const BlogPage = ({data}:any) => {
         ))
         }
         </div>
+        <Footer />
       </Layout>
     </div>
       

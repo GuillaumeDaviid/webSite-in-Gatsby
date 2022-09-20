@@ -4,15 +4,14 @@ date: "2022-06-06"
 slug: "presentation-des-hooks-react"
 featuredImage: "./react-hooks.png"
 hero_image: "./react-hooks.png"
-hero_image_alt: "A gray pitbull relaxing on the sidewalk with its tongue hanging out"
-hero_image_credit_text: "Christopher Ayme"
-hero_image_credit_link: "https://unsplash.com/photos/ocZ-_Y7-Ptg"
+hero_image_alt: "React hooks"
+hero_image_credit_text: "React"
 ---
 
-Les hooks sont apparu avec la version 16.8 de React et avec eux dans leurs bagages, un tas de fonctionnalité qui vont alors faciliter la vie des développeurs qui ne veulent pas passer par les composantes classes.
+Les hooks sont apparu avec la version 16.8 de **React** et avec eux dans leurs bagages, un tas de fonctionnalité qui vont alors faciliter la vie des développeurs qui ne veulent pas passer par les composantes classes.
 
-Présentation
-Les hooks sont des fonctions intégrées à ReactJS qui sont utilisable uniquement avec les composants fonctionnels. Leur utilisation est donc impossible dans des composants fait à base de classe.
+## Présentation
+Les hooks sont des fonctions intégrées à **ReactJS** qui sont utilisable uniquement avec les composants fonctionnels. Leur utilisation est donc impossible dans des composants fait à base de classe.
 
 Ils sont apparus avec comme objectif de rendre le code « plus propre » et de régler un certain nombre de problèmes existant en React. Parmi ces problèmes, ont compte notamment la difficulté de réutiliser la logique à état, l’utilisation de this dans les composantes classes qui peut paraître difficiles à appréhender ou encore la compréhension des composants complexe de par la logique à état qui peuvent augmenter le nombre bug dans vos applications.
 
@@ -24,49 +23,59 @@ Si vous travaillez en équipe, il faudra aussi s’assurer que tous les membres 
 
 Il est temps maintenant de passer à la découverte des hooks !
 
-Liste (non-exhaustive)
+## Liste (non-exhaustive)
 Nous allons entrer dans les détails des hooks, cette liste ne sera pas exhaustive, mais je vais globalement parler des hooks qui j’utilise le plus.
 
-useState
+### useState
 
-useState est un hook qui permet d’ajouter un état local à une application.
+*useState* est un hook qui permet d’ajouter un état local à une application.
 
-| const [state, setState] = useState(0)
+```markdown	
+const [state, setState] = useState(0)
+```
 
 Cela déclare donc une variable d’état (state) et une fonction qui permet de la modifier (setState). À noter que vous pouvez donner n’importe quel nom à vos variables d’état. Il faut aussi savoir que la valeur entre parenthèses, dans notre exemple 0, correspond à l’état initial de notre composant.
 
-Pour lire l’état, il suffit généralement de mettre entre crochets le nom de la variable d’état comme toute variable.
+Pour lire l’état, il suffit généralement de mettre entre crochets le nom de la variable d’état comme toute variable. 
 
-| <p>L’état local est égal à : {state}</p>
+```markdown	
+<p>L’état local est égal à : {state}</p>
+```
+
 
 Pour modifier l’état, il faut faire appel à la fonction setState comme ci-dessous.
 
-| setState(1)
+```markdown	
+setState(1)
+```
 
 Après l’appel de fonction, la variable d’état sera égale à 1.
 
 Avant de passer à la suite, sachez qu’il est bien sur possible d’utiliser plusieurs variables d’état à l’intérieur d’un composant, il faudra bien sûr qu’elles ai des noms différents.
 
-useEffect
+### useEffect
 
-UseEffect est, comme son nom l’indique, un hook d’effet. Il permet de déclencher une fonction lorsque l’état du composant change. Cela permet d’appliquer des effets de bord tel que modifier le DOM, changer le titre d’un document…
+*UseEffect* est, comme son nom l’indique, un hook d’effet. Il permet de déclencher une fonction lorsque l’état du composant change. Cela permet d’appliquer des effets de bord tel que modifier le DOM, changer le titre d’un document…
 
+`gist:GuillaumeDaviid/f1864897fb4a34964f12a0d2caa02911`
 
 Si on analyse l’exemple ci-dessus, on remarque que useEffect prend deux paramètres, la fonction qui sera exécutée quand une dépendance du composant changera et ce même tableau de dépendance (vide dans notre exemple).
 
-Sachez que même s’il est possible d’appeler une fonction en dehors de useEffect, je vous déconseille fortement de la faire. Je vous conseille aussi d’éviter d’abuser des tableaux de dépendance vide.
+Sachez que même s’il est possible d’appeler une fonction en dehors de *useEffect*, je vous déconseille fortement de la faire. Je vous conseille aussi d’éviter d’abuser des tableaux de dépendance vide.
 
-useContext
+### useContext
 
-Avec React, les props sont des données que se passent les composants (du parent vers l’enfant). Mais certains types de donnée nécessitent d’être transmis à plusieurs composants, il peut alors être très rébarbatif et compliquer le développement et la maintenance de votre application. C’est pour simplifier la transmission de ces données globale qu’a était crée le hook useContext.
+Avec **React**, les props sont des données que se passent les composants (du parent vers l’enfant). Mais certains types de donnée nécessitent d’être transmis à plusieurs composants, il peut alors être très rébarbatif et compliquer le développement et la maintenance de votre application. C’est pour simplifier la transmission de ces données globale qu’a était crée le hook useContext.
 
 Avant de pouvoir utiliser useContext dans vos composants, il va déjà falloir créer « votre context ». C’est une fonction qui va se charger de traiter les données et de fournir un provider.
 
+`gist:GuillaumeDaviid/da85da7fee4a02c25ee62a103810a51a`
 
 Comme vous pouvez le remarquer, on utilise createContext, une fonction qui permet de créer un context.
 
 Ensuite, il va falloir englober les composants qui ont besoin de ces valeurs avec le provider crée ci-dessus.
 
+`gist:GuillaumeDaviid/9c8dbc705e1a75b43549095f48a9e9cb`
 
 Dans un premier temps, nous devons importer le hook, mais aussi le context. Ensuite, nous recouperons la valeur que nous retourne notre context, ici « value ».
 
@@ -76,15 +85,16 @@ J’aurais pu continuer la présentation plus précise d’autres hooks, mais ce
 
 Avant de conclure, laissez-moi vous présenter une des forces des hooks et de react.
 
-Les hooks personnalisé
-Saviez vous que React vous donne la possibilité de créer vos propre hooks ?
+## Les hooks personnalisé
+Saviez vous que **React** vous donne la possibilité de créer vos propre hooks ?
 
 En effet, créer vos hooks permet de reproduire une fonctionnalité d’un composant de manière réutilisable. Cela améliore donc la maintenance du code.
 
 La création d’un hook se fait sous la forme de fonction, tout comme les hooks par défaut, il faudra ensuite les importer pour pouvoir les utiliser.
 
+`gist:GuillaumeDaviid/a6314596d2e3dc5998dd636d48f1fdc9`
 
-Conclusion
+## Conclusion
 Le but de cet article était de vous présenter les hooks.
 
 Comme dis ci-dessus, la liste des hooks est longue, si vous voulez creuser le sujet, je vous conseil la doc officielle qui est vraiment bien faite.
