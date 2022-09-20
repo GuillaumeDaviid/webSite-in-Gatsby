@@ -37,7 +37,7 @@ query ($id: String) {
       hero_image_alt
       hero_image {
       childImageSharp {
-        gatsbyImageData(width: 400)
+        gatsbyImageData(width: 600)
       }
     }
     }
