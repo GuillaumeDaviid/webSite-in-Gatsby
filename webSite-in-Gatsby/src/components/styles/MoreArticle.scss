@@ -18,3 +18,14 @@
         
     }
 }
+
+@media (max-width: 750px) {
+    .MoreArticle {
+        &_items {
+            &-elt {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

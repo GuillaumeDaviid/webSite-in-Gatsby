@@ -27,3 +27,23 @@
     margin-left: 100px;
     margin-top: 10px;
 }
+
+@media (max-width: 750px) {
+    .Layout {
+        &__title {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .Layout {
+        &__title {
+            font-size: 1.5rem;
+        }
+    }
+
+    .nav__elt {
+        margin-left: 15px;
+    }
+}
