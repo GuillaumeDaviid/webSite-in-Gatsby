@@ -71,3 +71,13 @@
          }
     }
 }
+
+@media (max-width: 750px) {
+    .About {
+      &_text {
+        font-size: 1rem;
+      }
+  
+      
+    }
+  }
