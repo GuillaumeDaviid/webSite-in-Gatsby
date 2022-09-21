@@ -106,3 +106,45 @@
 .container-btn {
     text-align: right;
 }
+
+@media (max-width: 750px) {
+    .Form {
+        &_content {
+            display: flex;
+            flex-direction: column;
+
+            &-form {
+                width: 100%;
+            }
+
+            &-info {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .Form {
+        &_text {
+            &-content {
+                font-size: 1rem;
+            }
+        }
+
+        &_content {
+            &-info {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .row_form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-form {
+        font-size: 1rem;
+    }
+}

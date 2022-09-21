@@ -82,3 +82,18 @@
          }
     }
 }
+
+@media (max-width: 800px) {
+    .Skill {
+        &_skills {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .skills {
+        width: 200px;
+    }
+}
