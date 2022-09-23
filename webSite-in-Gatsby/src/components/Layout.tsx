@@ -1,11 +1,18 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+// @ts-ignore
+import favicon from '../images/favicon.ico'
+import  {Helmet} from "react-helmet"
 import './styles/Layout.scss'
 
 const Layout = ({ pageTitle, children }:any) => {
 
     return(
         <div className='Layout'>
+          <Helmet>
+    <html lang="fr" />
+    <link rel="icon" href={favicon}/>
+    </Helmet>
           <div className='Layout__nav'>
             <nav>
         <ul className='Layout__nav--children' >
