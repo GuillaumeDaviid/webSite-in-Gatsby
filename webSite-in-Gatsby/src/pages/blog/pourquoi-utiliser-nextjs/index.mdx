@@ -1,0 +1,54 @@
+---
+title: "Pourquoi utliser Next.JS ?"
+date: "2022-09-14"
+slug: "pourquoi-utiliser-nextjs"
+featuredImage: "./Nextjs.png"
+hero_image: "./Nextjs.png"
+hero_image_alt: "NextJS Logo"
+hero_image_credit_text: "NextJS"
+---
+
+Après vous avoir parlé de Gatsby, il est temps pour moi de vous parler d’un autre framework ReactJS qui lui aussi gagne en popularité, **Next.JS**. Tout comme Gatsby, **Next.JS** est open-source, se base sur React, mais est aussi une offre tout en un, c’est-à-dire qu’il a par exemple, son propre système de routage par défaut (ce que n’a React de base) ou encore, il peut gérer le rendu coté serveur.
+
+Voici donc une liste non-exhaustive des raisons pour lequel vous devriez utiliser **Next.JS**.
+
+## Le SSR (server side rendering) et SSG (static site generation)
+
+C’est l’une des raisons pour lesquelles **Next.JS** monte en popularité, en effet, Next vous propose deux types de rendu, le server side rendering et le static site generation.
+
+Commençons par parler du rendu coté serveur (SSR). Pour faire simple, le SSR se décrit par le fait que le serveur transforme le JavaScript en HTML avant de l’envoyer au navigateur. Cela a pour effet d’améliorer le SEO. En effet, les bots de Google comprennent alors mieux le code de votre page web. De plus, le rendu coté serveur permet aussi un chargement de la page plus rapide, et comme dit dans l’article sur Gatbsy, cela améliore aussi le référencement.
+
+Autre avantage à l’utilisation du SSR, l’hébergement est généralement moins cher, car il permet le serverless, une technique qui vous permet de transmettre votre code à un fournisseur cloud (AWS par exemple) qui peut lui-même exécuter votre code. Cela vous permet alors de ne pas vous soucier de la gestion d’un quelconque serveur. Le serverless ou l’architecture sans serveur est disponible depuis la version 8 ce qui permet de continuer l’utilisation de l’environnement Next tout en tirant parti de l’architecture sans serveur en divisant l’application en plus petits éléments lors du déploiement.
+
+Maintenant, parlons du rendu statique (SSG). Déjà connu des utilisateurs de Gatsby, le rendu statique est né avec le web, il consiste à rendre la page au moment de sa construction. Avec **Next.JS**, la page sera pré-rendue au moment de la compilation, cela signifie que l’utilisateur n’aura pas à attendre que la page se charge dans le navigateur.
+
+Tout comme le SSR, le SSG permet une meilleure optimisation du SEO, notamment grâce à sa rapidité de chargement. Il permet aussi de faire des économies sur l’hébergement en partie au fait qu’il ne nécessite pas de base de données.
+
+### Mais alors, SSR ou SSG ?
+
+En fonction de vos besoins, le choix sera différent. Si vous avez comme projet de créer un blog avec comme seule fonctionnalité par exemple à pouvoir accéder à chaque posts, alors le choix du rendu statique semble être le plus approprié. Mais certaine partie du site peuvent pouvoir nécessiter une utilisation du rendu coté serveur.
+
+Gardez toujours à l’esprit que vous pouvez choisir la stratégie de rendu pour chaque page en fonction des besoins de celle-ci.
+
+## L’optimisation des images
+
+**Next.JS** vous fournit par défaut un outil d’optimisation des images. En effet, **Next.js** vous propose un composant Image qui remplace la balise img en HTML. Il permet alors d’optimiser vos images pour une meilleure expérience utilisateur, mais aussi une amélioration du référencement Google. Parmi les optimisations qu’il fournit, on retrouve le fait qu’il charge l’image uniquement quand elle rentre la fenêtre de navigation ou encore une optimisation de taille pour chaque appareil.
+
+## Le système de Routage (Router)
+
+Next.JS vous propose aussi un système de routage par défaut qui se base le système de fichier de NodeJS. Pour faire simple, Next va créer une route pour chaque fichier présent dans le dossier Pages. Par exemple pour un fichier contact.js, la route pour y accéder sera https://localhost:3000/contact. Tous les fichiers présents dans le dossier Pages et ayant comme extensions .js, .ts, .jsx ou .tsx seront considéré par le router comme des routes potentielles. À noter que le fichier index.js correspond à la page par défaut qui sera affiché au lancement de votre serveur, en d’autres termes, c’est votre page d’accueil.
+
+Vous l’avez compris, s’il n’y a pas de fichier dans le dossier Pages, il n’y aura pas de routes disponibles.
+
+Avec tout ça, il met aussi à disposition une Link censée remplacer la balise a traditionnel pour effectuer les transitions entre les pages.
+
+## Vercel : un moyen simple de déployer votre projet
+
+Une autre raison d’utiliser NextJS se nomme Vercel. Crée par les créateurs de Next, il vous propose un moyen de déployer votre application Next.JS en ajoutant des fonctionnalités de tout premier ordre.
+
+On retrouve par exemple la gestion du Static site generation avec le Vercel Edge Network ou encore la possibilité de passer en serverless si vous utilisez le Server Side Rendering.
+
+De plus, il vous offre un domaine personnalisé, une activation par défaut du HTTPS et l’attribution d’un certificat SSL, extrêmement important pour le référencement Google. Et bien, tout un tas d’autre fonctionnalité vrai utile pour le déploiement en production de votre projet.
+
+Pour conclure, j’espère vous avoir éclairé sur pourquoi il faut utiliser Next.js en 2022 si vous êtes un développeur front-end. Next.JS est devenue un incontournable pour les développeurs JavaScript. Il apporte tout un tas de fonctionnalité pour à la fois améliorer l’expérience utilisateur, mais aussi l’expérience développeur. Il est déjà utilisé par de grands noms de la tech comme par exemple TikTok ou encore Twitch.
+
