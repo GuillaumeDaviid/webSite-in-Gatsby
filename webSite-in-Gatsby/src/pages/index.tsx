@@ -37,4 +37,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <title>Guillaume DAVID | Développeur React Freelance</title>

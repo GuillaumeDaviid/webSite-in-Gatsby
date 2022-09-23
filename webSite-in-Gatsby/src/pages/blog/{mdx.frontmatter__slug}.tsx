@@ -2,6 +2,7 @@ import * as React from 'react'
 import { graphql } from 'gatsby'
 import type { HeadFC } from "gatsby"
 import { GatsbyImage } from 'gatsby-plugin-image'
+import { Helmet } from 'react-helmet';
 import Layout from '../../components/Layout'
 import Footer from '../../components/Footer'
 import MoreArticle from '../../components/MoreArticle'

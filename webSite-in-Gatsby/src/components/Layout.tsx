@@ -12,6 +12,7 @@ const Layout = ({ pageTitle, children }:any) => {
           <Helmet>
     <html lang="fr" />
     <link rel="icon" href={favicon}/>
+    <title>Guillaume David | {pageTitle}</title>
     </Helmet>
           <div className='Layout__nav'>
             <nav>
