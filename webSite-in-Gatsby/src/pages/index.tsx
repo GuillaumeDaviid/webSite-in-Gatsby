@@ -7,7 +7,9 @@ import Skills from '../components/Skills'
 import Why from '../components/Why'
 import Form from '../components/Form'
 import Footer from '../components/Footer'
-import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3';
+// @ts-ignore
+import favicon from '../images/favicon.ico'
+import  {Helmet} from "react-helmet"
 import type { HeadFC } from "gatsby"
 import '../components/styles/global.scss'
 
@@ -15,6 +17,11 @@ const IndexPage = () => {
   return (
     <div>
     
+    <Helmet>
+    <html lang="fr" />
+    <link rel="icon" href={favicon}/>
+    </Helmet>
+
       <Header />
       <About />
       <Portfolio />
@@ -30,4 +37,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <title>Guillaume DAVID | Développeur React Freelance</title>
