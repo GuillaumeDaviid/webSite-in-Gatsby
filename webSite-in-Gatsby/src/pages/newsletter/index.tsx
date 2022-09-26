@@ -16,14 +16,18 @@ const Newsletter = () => {
                 </div>
 
                 <div className='Newsletter__form'>
-                <form>
+                <form action='https://www.getrevue.co/profile/guillaumedavid/add_subscriber' method="post" name="revue-form" target="_blank">
                 <div>
-                  <input className="Newsletter__form--input" type="email" name="email" required={true} placeholder="Votre adresse Email"/>
+                  <input className="Newsletter__form--input" type="email" name="member[email]" id="member_email" required={true} placeholder="Votre adresse Email"/>
                 </div>
 
-                <input type="submit" value="S'INSCRIRE" className="btn-form"/>
-
+                <input type="submit" value="S'INSCRIRE" className="btn-form" name="member[subscribe]"id="member_submit"/>
+            
                 </form>
+                </div>
+                <div className="revue-form-footer">En vous inscrivant, vous acceptez les 
+                <a target="_blank" href="https://www.getrevue.co/terms"> conditions d'utilisations</a> et 
+                <a target="_blank" href="https://www.getrevue.co/privacy"> la Politique de confidentialité</a> de Revue.
                 </div>
 
                 <p>🔒 100% sécurisé, vos données restent confidentielles. 
