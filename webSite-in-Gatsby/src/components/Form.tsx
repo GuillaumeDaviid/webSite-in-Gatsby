@@ -1,13 +1,11 @@
 import * as React from 'react'
 import './styles/Form.scss'
 import { useState } from 'react'
-import axios from "axios";
-import {
-  GoogleReCaptchaProvider,
-  GoogleReCaptcha
-} from "react-google-recaptcha-v3";
+import ReCAPTCHA from "react-google-recaptcha"
 
 export default function Form() {
+    const [showRecaptcha, setShowRecaptcha] = useState<boolean>(true)
+
     
     return(
         <div className="Form">
@@ -35,10 +33,8 @@ export default function Form() {
                 <a>linkedin</a>
                
             </div>
-            
 
             <div className="Form_content-form">
-            <GoogleReCaptchaProvider reCaptchaKey='6LfYwUEcAAAAAMDY20qhYUpD-D-ng45mPmV25S7M'>
                 <form id="formid" method="post" action='https://getform.io/f/ca7fb4f1-379c-4242-a03a-93dd5d1d0078' /*ou https://www.guillaumedavid.com/api/recaptcha.php  ../api/recaptcha.php */>
                     <div className="row_form">
 
@@ -58,14 +54,15 @@ export default function Form() {
 
                     <div className="container-btn">
 
+                    {showRecaptcha && (
+                     <ReCAPTCHA sitekey="6Ld2NTUiAAAAAEdSFPLK-lrMP7Y3hmRz-3vTa-yV" />)
+                    }
                     <input type="submit" value="ENVOYER" className="btn-form"/>
                     
                     </div>
 
-                
-
+                    
                 </form>
-                </GoogleReCaptchaProvider>
             </div>
 
             </div>

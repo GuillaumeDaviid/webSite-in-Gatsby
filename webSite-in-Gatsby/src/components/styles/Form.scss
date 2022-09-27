@@ -86,7 +86,7 @@
     letter-spacing: 1px;
     font-size: 1.875rem;
     border-radius: 0px;
-    margin-top: 20px;
+    margin-top: 5px;
     background-color: transparent;
     transition: .5s;
     font-family: 'amblebold';
@@ -104,7 +104,9 @@
 }
 
 .container-btn {
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 @media (max-width: 750px) {
