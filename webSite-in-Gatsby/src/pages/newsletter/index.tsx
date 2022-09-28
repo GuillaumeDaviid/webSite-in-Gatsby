@@ -16,15 +16,18 @@ const Newsletter = () => {
                 </div>
 
                 <div className='Newsletter__form'>
-                <form action='https://www.getrevue.co/profile/guillaumedavid/add_subscriber' method="post" name="revue-form" target="_blank">
+                {/*<form action='https://www.getrevue.co/profile/guillaumedavid/add_subscriber' method="post" name="revue-form" target="_blank">
                 <div>
                   <input className="Newsletter__form--input" type="email" name="member[email]" id="member_email" required={true} placeholder="Votre adresse Email"/>
                 </div>
 
                 <input type="submit" value="S'INSCRIRE" className="btn-form" name="member[subscribe]"id="member_submit"/>
+                
             
-                </form>
+    </form>*/}
+                
                 </div>
+                <iframe className='Newsletter__form--frame' src="https://go.formulaire.info/form?p=j4JjiuLA" height="100%" width="100%" scrolling="auto"></iframe>
                 <div className="revue-form-footer">En vous inscrivant, vous acceptez les 
                 <a target="_blank" href="https://www.getrevue.co/terms"> conditions d'utilisations</a> et 
                 <a target="_blank" href="https://www.getrevue.co/privacy"> la Politique de confidentialité</a> de Revue.
