@@ -28,10 +28,6 @@ const Newsletter = () => {
                 
                 </div>
                 <iframe className='Newsletter__form--frame' src="https://go.formulaire.info/form?p=j4JjiuLA" height="100%" width="100%" scrolling="auto"></iframe>
-                <div className="revue-form-footer">En vous inscrivant, vous acceptez les 
-                <a target="_blank" href="https://www.getrevue.co/terms"> conditions d'utilisations</a> et 
-                <a target="_blank" href="https://www.getrevue.co/privacy"> la Politique de confidentialité</a> de Revue.
-                </div>
 
                 <p>🔒 100% sécurisé, vos données restent confidentielles. 
 Vous restez libre de vous désinscrire à tout moment en 1 clic.</p>
