@@ -11,4 +11,9 @@ describe("Header", () => {
     expect(tree).toMatchSnapshot()
   })
 
+  it("should have a title element", () => {
+    render(<Header />)
+
+
+  })
 })

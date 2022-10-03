@@ -13,6 +13,7 @@ module.exports = {
         `gatsby-plugin-utils/$1`,
       ], // Workaround for https://github.com/facebook/jest/issues/9771
     },
+    testEnvironment: 'jest-environment-jsdom',
     testPathIgnorePatterns: [`node_modules`, `\\.cache`, `<rootDir>.*/public`],
     transformIgnorePatterns: [`node_modules/(?!(gatsby|gatsby-script|gatsby-link)/)`],
     globals: {
