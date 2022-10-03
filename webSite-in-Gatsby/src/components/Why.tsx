@@ -8,14 +8,14 @@ export default function Why() {
     return(
         <div className="Why">
 
-            <h2>POURQUOI MOI ?</h2>
-            <div className="Why_separator"></div>
-            <p className="Why_head">Envie d&apos;un nouveau site web ? Ou alors d&apos;une refonte de celui-ci ? 
+            <h2 data-testid="title">POURQUOI MOI ?</h2>
+            <div className="Why_separator" data-testid="separator"></div>
+            <p className="Why_head" data-testid="text">Envie d&apos;un nouveau site web ? Ou alors d&apos;une refonte de celui-ci ? 
             Vous cherchez un développeur qui répond à vos besoins sur-mesure et qui respect les délais et le budget ?</p>
        
 
             <div className="Why_items">
-                <div className="Why_items-elt">
+                <div className="Why_items-elt" data-testid="items">
                     <div className="image_container">
 
                     </div>
@@ -27,7 +27,7 @@ export default function Why() {
                     <p className="items-text">Site web accessible sur mobile.</p>
                 </div>
 
-                <div className="Why_items-elt">
+                <div className="Why_items-elt" data-testid="items">
                     <div className="image_container">
               
                     </div>
@@ -39,7 +39,7 @@ export default function Why() {
                     <p className="items-text">Site web accessible sur tablette.</p>
                 </div>
 
-                <div className="Why_items-elt">
+                <div className="Why_items-elt" data-testid="items">
                     <div className="image_container">
              
                     </div>
