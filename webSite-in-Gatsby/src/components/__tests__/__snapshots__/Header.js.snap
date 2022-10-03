@@ -9,9 +9,12 @@ exports[`Header renders correctly 1`] = `
   >
     <nav
       className="Header_nav nav_notVisible"
+      data-testid="nav"
     >
       <ul>
-        <li>
+        <li
+          data-testid="li"
+        >
           <a
             href="#home"
             onClick={[Function]}
@@ -21,7 +24,9 @@ exports[`Header renders correctly 1`] = `
             </span>
           </a>
         </li>
-        <li>
+        <li
+          data-testid="li"
+        >
           <a
             href="#portfolio"
             onClick={[Function]}
@@ -31,7 +36,9 @@ exports[`Header renders correctly 1`] = `
             </span>
           </a>
         </li>
-        <li>
+        <li
+          data-testid="li"
+        >
           <a
             href="#contact"
             onClick={[Function]}
@@ -41,7 +48,9 @@ exports[`Header renders correctly 1`] = `
             </span>
           </a>
         </li>
-        <li>
+        <li
+          data-testid="li"
+        >
           <a
             href="/blog"
             onClick={[Function]}
@@ -54,6 +63,7 @@ exports[`Header renders correctly 1`] = `
       </ul>
       <a
         className="cd-close-menu"
+        data-testid="closeNav"
         href="#"
         onClick={[Function]}
       >
@@ -70,6 +80,7 @@ exports[`Header renders correctly 1`] = `
     </a>
     <h1
       className="Header_title"
+      data-testid="title"
     >
       GUILLAUME DAVID
     </h1>
@@ -78,11 +89,13 @@ exports[`Header renders correctly 1`] = `
     />
     <h3
       className="Header_description"
+      data-testid="subTitle"
     >
       Développeur Front End / Javascript / React
     </h3>
     <a
       className="mouse-scroll"
+      data-testid="scroll"
       href="#introduction"
     >
       <span
