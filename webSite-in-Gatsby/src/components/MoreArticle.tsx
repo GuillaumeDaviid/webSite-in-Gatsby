@@ -6,7 +6,7 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 
 export default function MoreArticle () {
     return(
-        <div className='MoreArticle'>
+        <div className='MoreArticle' data-testid="article">
             <StaticQuery
       query={graphql`
       query {
@@ -29,7 +29,7 @@ export default function MoreArticle () {
       }
       `}
       render={data => (
-        <div >
+        <div>
           <div className='MoreArticle_items-elt'>{data.allMdx.nodes.map((node:any) => (
               <div className="MoreArticle_items-elt-item">
             <GatsbyImage image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt='asdsf' className='blog_image'/>
