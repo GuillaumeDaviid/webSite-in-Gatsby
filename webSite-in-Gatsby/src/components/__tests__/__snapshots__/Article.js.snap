@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<div
+  className="Article"
+>
+  <h2
+    data-testid="title"
+  >
+    Article
+  </h2>
+  <div
+    className="Article_separator"
+    data-testid="separator"
+  />
+  <div
+    className="Article_items"
+  >
+    <button
+      className="Article_items-btn right"
+      data-testid="btn"
+      onClick={[Function]}
+    >
+      &lt;
+    </button>
+    <button
+      className="Article_items-btn left"
+      data-testid="btn"
+      onClick={[Function]}
+    >
+      &gt;
+    </button>
+    <div
+      className="Article_items-elt"
+      id="carrousel"
+    />
+  </div>
+</div>
+`;

@@ -42,12 +42,12 @@ function handleClickPrevious() {
     return(
         <div className="Article">
          
-            <h2>Article</h2>
-            <div className="Article_separator"></div>
+            <h2 data-testid="title">Article</h2>
+            <div className="Article_separator" data-testid="separator"></div>
             
             <div className="Article_items">
-                <button className="Article_items-btn right" onClick={handleClickPrevious}>&#60;</button>
-                <button className="Article_items-btn left" onClick={handleClickNext}>&#62;</button>
+                <button className="Article_items-btn right" onClick={handleClickPrevious} data-testid="btn">&#60;</button>
+                <button className="Article_items-btn left" onClick={handleClickNext} data-testid="btn">&#62;</button>
 
                 <div className='Article_items-elt' id="carrousel">
 
