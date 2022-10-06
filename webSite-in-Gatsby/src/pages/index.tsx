@@ -7,7 +7,6 @@ import Skills from '../components/Skills'
 import Why from '../components/Why'
 import Form from '../components/Form'
 import Footer from '../components/Footer'
-// @ts-ignore
 import favicon from '../images/favicon.ico'
 import  {Helmet} from "react-helmet"
 import type { HeadFC } from "gatsby"

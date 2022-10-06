@@ -9,8 +9,6 @@ export default function Article({data}:any) {
   const [p, setp] = useState(0);
   const [nbr, setNbr] = useState(1);
 
-  console.log(data)
-
   function handleClickNext() {
     let carrousel = document.getElementById('carrousel');
     if (carrousel){

@@ -4,11 +4,18 @@ import '../styles/index.scss'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import Layout from '../../components/Layout'
 import Footer from '../../components/Footer'
+import favicon from '../../images/favicon.ico'
+import  {Helmet} from "react-helmet"
 
 const BlogPage = ({data}:any) => {
   
   return (
     <div>
+    <Helmet>
+    <html lang="fr" />
+    <link rel="icon" href={favicon}/>
+    <title>Guillaume David | Articles</title>
+    </Helmet>
       <Layout pageTitle="Mes Articles">
         <div className='blog'>
       {

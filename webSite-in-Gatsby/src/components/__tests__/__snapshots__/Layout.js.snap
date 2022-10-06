@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout renders correctly 1`] = `
+<div
+  className="Layout"
+>
+  <div
+    className="Layout__nav"
+    data-testid="nav"
+  >
+    <nav>
+      <ul
+        className="Layout__nav--children"
+      >
+        <li
+          className="nav__elt"
+          data-testid="li"
+        >
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          className="nav__elt"
+          data-testid="li"
+        >
+          <a
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+        <li
+          className="nav__elt"
+          data-testid="li"
+        >
+          <a
+            href="/blog"
+          >
+            Blog
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <h1
+      className="Layout__title"
+      data-testid="title"
+    />
+    <div
+      className="Header_separator-white"
+      data-testid="separator"
+    />
+  </div>
+  <main />
+</div>
+`;
