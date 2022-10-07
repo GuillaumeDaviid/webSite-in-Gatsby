@@ -1,5 +1,7 @@
 import * as React from 'react'
 import Footer from '../../components/Footer'
+import favicon from '../../images/favicon.ico'
+import  {Helmet} from "react-helmet"
 import './index.scss'
 
 
@@ -7,6 +9,11 @@ const Newsletter = () => {
     return(
         <div className='Page__Newsletter'>
             <div className='Newsletter'>
+            <Helmet>
+    <html lang="fr" />
+    <link rel="icon" href={favicon}/>
+    <title>Guillaume David | NEWSLETTER</title>
+    </Helmet>
 
                 <div className='Newsletter__text'>
                 <h1>Recevez mes Emails Privées</h1>

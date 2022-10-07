@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<section
+  id="portfolio"
+>
+  <div
+    className="Portfolio"
+  >
+    <h2
+      className="Protfolio_title"
+      data-testid="title"
+    >
+      MON PORTFOLIO
+    </h2>
+    <div
+      className="Portfolio_separator"
+      data-testid="separator"
+    />
+    <ul
+      className="Portfolio_btn"
+    >
+      <li
+        className="selected"
+        data-testid="all"
+        onClick={[Function]}
+      >
+        All
+      </li>
+      <li
+        className="notSelected"
+        data-testid="front"
+        onClick={[Function]}
+      >
+        Front end
+      </li>
+      <li
+        className="notSelected"
+        data-testid="full"
+        onClick={[Function]}
+      >
+        Full stack
+      </li>
+      <li
+        className="notSelected"
+        data-testid="mobile"
+        onClick={[Function]}
+      >
+        Mobile
+      </li>
+    </ul>
+    <div
+      className="Portfolio_items"
+    >
+      <div
+        className="Portfolio_items-elt visible"
+        data-testid="portfolio"
+      >
+        <div
+          className="Portfolio_items-content"
+        >
+          <h3>
+            Netflix Clone
+          </h3>
+          <a
+            data-testid="link"
+            href="https://github.com/GuillaumeDaviid/Netflix-Clone"
+            target="_blank"
+          >
+            Link
+          </a>
+        </div>
+      </div>
+      <div
+        className="Portfolio_items-elt visible"
+        data-testid="portfolio"
+      >
+        <div
+          className="Portfolio_items-content"
+        >
+          <h3>
+            Jeu de Dame
+          </h3>
+          <a
+            data-testid="link"
+            href="https://guillaumedaviid.github.io/Checkers-Game/"
+            target="_blank"
+          >
+            Link
+          </a>
+        </div>
+      </div>
+      <div
+        className="Portfolio_items-elt visible"
+        data-testid="portfolio"
+      >
+        <div
+          className="Portfolio_items-content"
+        >
+          <h3>
+            01 ACADEMIE
+          </h3>
+          <a
+            data-testid="link"
+            href="https://www.01academie.com/"
+            target="_blank"
+          >
+            Link
+          </a>
+        </div>
+      </div>
+      <div
+        className="Portfolio_items-elt visible"
+        data-testid="portfolio"
+      >
+        <div
+          className="Portfolio_items-content"
+        >
+          <h3>
+            01 ACADEMIE
+          </h3>
+          <a
+            data-testid="link"
+            href="https://www.01academie.com/"
+            target="_blank"
+          >
+            Link
+          </a>
+        </div>
+      </div>
+      <div
+        className="Portfolio_items-elt visible"
+        data-testid="portfolio"
+      >
+        <div
+          className="Portfolio_items-content"
+        >
+          <h3>
+            01 ACADEMIE
+          </h3>
+          <a
+            data-testid="link"
+            href="https://www.01academie.com/"
+            target="_blank"
+          >
+            Link
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

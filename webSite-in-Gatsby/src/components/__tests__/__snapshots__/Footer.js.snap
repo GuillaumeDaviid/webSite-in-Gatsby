@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<div
+  className="Footer"
+>
+  <p>
+    Vivre, apprendre et monter de niveau chaque jours
+  </p>
+  <p
+    className="Footer_copyright"
+  >
+    2022. All Rights Reserved
+  </p>
+</div>
+`;

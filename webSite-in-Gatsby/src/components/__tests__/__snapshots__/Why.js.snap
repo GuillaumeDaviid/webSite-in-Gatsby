@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Why renders correctly 1`] = `
+<div
+  className="Why"
+>
+  <h2
+    data-testid="title"
+  >
+    POURQUOI MOI ?
+  </h2>
+  <div
+    className="Why_separator"
+    data-testid="separator"
+  />
+  <p
+    className="Why_head"
+    data-testid="text"
+  >
+    Envie d'un nouveau site web ? Ou alors d'une refonte de celui-ci ? Vous cherchez un développeur qui répond à vos besoins sur-mesure et qui respect les délais et le budget ?
+  </p>
+  <div
+    className="Why_items"
+  >
+    <div
+      className="Why_items-elt"
+      data-testid="items"
+    >
+      <div
+        className="image_container"
+      />
+      <h5
+        className="items-title"
+      >
+        Responsive Design
+      </h5>
+      <p
+        className="items-text"
+      >
+        Site web accessible sur mobile.
+      </p>
+    </div>
+    <div
+      className="Why_items-elt"
+      data-testid="items"
+    >
+      <div
+        className="image_container"
+      />
+      <h5
+        className="items-title"
+      >
+        Responsive Layout
+      </h5>
+      <p
+        className="items-text"
+      >
+        Site web accessible sur tablette.
+      </p>
+    </div>
+    <div
+      className="Why_items-elt"
+      data-testid="items"
+    >
+      <div
+        className="image_container"
+      />
+      <h5
+        className="items-title"
+      >
+        React.js
+      </h5>
+      <p
+        className="items-text"
+      >
+        Vous avez un gros projet à venir ? React.js est utilisé par Facebook, Instagram, Twitter, Netflix ...
+      </p>
+    </div>
+  </div>
+  <div
+    className="quote"
+  >
+    <div
+      className="quote_background"
+    />
+  </div>
+</div>
+`;

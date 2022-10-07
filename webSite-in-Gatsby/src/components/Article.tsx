@@ -9,8 +9,6 @@ export default function Article({data}:any) {
   const [p, setp] = useState(0);
   const [nbr, setNbr] = useState(1);
 
-  console.log(data)
-
   function handleClickNext() {
     let carrousel = document.getElementById('carrousel');
     if (carrousel){
@@ -42,12 +40,12 @@ function handleClickPrevious() {
     return(
         <div className="Article">
          
-            <h2>Article</h2>
-            <div className="Article_separator"></div>
+            <h2 data-testid="title">Article</h2>
+            <div className="Article_separator" data-testid="separator"></div>
             
             <div className="Article_items">
-                <button className="Article_items-btn right" onClick={handleClickPrevious}>&#60;</button>
-                <button className="Article_items-btn left" onClick={handleClickNext}>&#62;</button>
+                <button className="Article_items-btn right" onClick={handleClickPrevious} data-testid="btn">&#60;</button>
+                <button className="Article_items-btn left" onClick={handleClickNext} data-testid="btn">&#62;</button>
 
                 <div className='Article_items-elt' id="carrousel">
 
@@ -77,9 +75,9 @@ function handleClickPrevious() {
         <div >
           <div className='Article_items-elt'>{data.allMdx.nodes.map((node:any) => (
               <div className="Article_items-elt-item">
-            <GatsbyImage image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt='asdsf' className='blog_image'/>
+            <GatsbyImage image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt={node.frontmatter.slug} className='blog_image'/>
             
-            <h2 className='item_link'>
+            <h2 className='item_link' data-testid="items">
               <Link to={`/blog/${node.frontmatter.slug}`}>
                 {node.frontmatter.title}
               </Link>

@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import type { HeadFC } from "gatsby"
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { Helmet } from 'react-helmet';
+import favicon from '../../images/favicon.ico'
 import Layout from '../../components/Layout'
 import Footer from '../../components/Footer'
 import MoreArticle from '../../components/MoreArticle'
@@ -13,6 +14,11 @@ const BlogPost = ({ data, children }:any) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <div className="mdx">
+      <Helmet>
+    <html lang="fr" />
+    <link rel="icon" href={favicon}/>
+    <title>Guillaume David | {data.mdx.frontmatter.title}</title>
+    </Helmet>
       <p>Guillaume David - {data.mdx.frontmatter.date}</p>
       <GatsbyImage image={data.mdx.frontmatter.hero_image.childImageSharp.gatsbyImageData} alt={data.mdx.frontmatter.hero_image_alt} className="mdx_img" />
       <div className='mdx_content'>
