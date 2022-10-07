@@ -2,6 +2,14 @@ import React from "react"
 import renderer from "react-test-renderer"
 import MoreArticle from "../MoreArticle.tsx"
 import { render, screen } from "@testing-library/react"
+import { StaticQuery } from "gatsby"
+import data from './data/MoreArticle.json'
+
+beforeEach(() => {
+  StaticQuery.mockImplementationOnce(({ render }) =>
+    render(data)
+  )
+})
 
 describe("Header", () => {
   it("renders correctly", () => {
@@ -16,5 +24,12 @@ describe("Header", () => {
 
     const article = screen.getByTestId('article');
     expect(article).toBeTruthy();
+  })
+
+  it("should have 4 items", () => {
+    render(<MoreArticle />)
+
+    const item = screen.getAllByTestId('items');
+    expect(item).toHaveLength(4);
   })
 })

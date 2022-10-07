@@ -1,0 +1,138 @@
+{
+    "allMdx": {
+      "nodes": [
+        {
+          "frontmatter": {
+            "date": "September 14, 2022",
+            "title": "Pourquoi utiliser Next.JS ?",
+            "slug": "pourquoi-utiliser-nextjs",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#080808",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/7af5a20b055f7e5d1109e6aa6b2305c7/577f0/Nextjs.png",
+                      "srcSet": "/static/7af5a20b055f7e5d1109e6aa6b2305c7/f46b5/Nextjs.png 42w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/12d5d/Nextjs.png 84w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/577f0/Nextjs.png 167w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/f5f50/Nextjs.png 334w",
+                      "sizes": "(min-width: 167px) 167px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/7af5a20b055f7e5d1109e6aa6b2305c7/25c77/Nextjs.webp 42w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/1c99e/Nextjs.webp 84w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/e7b8f/Nextjs.webp 167w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/b19c2/Nextjs.webp 334w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 167px) 167px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 167,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "6306cfe7-e7cb-535d-afdf-666d9d915b54",
+          "excerpt": "Après vous avoir parlé de Gatsby, il est temps pour moi de vous parler d’un autre framework ReactJS qui lui aussi gagne en popularité, Next…"
+        },
+        {
+          "frontmatter": {
+            "date": "September 7, 2022",
+            "title": "Pourquoi utiliser Gatsby pour votre site web ?",
+            "slug": "pourquoi-utiliser-gatsby-pour-votre-site-web",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#080808",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/2bab627a79337d768c8221c571d2c81a/ccf6a/gatsby.png",
+                      "srcSet": "/static/2bab627a79337d768c8221c571d2c81a/1170e/gatsby.png 45w,\n/static/2bab627a79337d768c8221c571d2c81a/b2b7e/gatsby.png 89w,\n/static/2bab627a79337d768c8221c571d2c81a/ccf6a/gatsby.png 178w,\n/static/2bab627a79337d768c8221c571d2c81a/3c234/gatsby.png 356w",
+                      "sizes": "(min-width: 178px) 178px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/2bab627a79337d768c8221c571d2c81a/1b4b4/gatsby.webp 45w,\n/static/2bab627a79337d768c8221c571d2c81a/4c978/gatsby.webp 89w,\n/static/2bab627a79337d768c8221c571d2c81a/744a3/gatsby.webp 178w,\n/static/2bab627a79337d768c8221c571d2c81a/723ea/gatsby.webp 356w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 178px) 178px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 178,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "e1aee602-4e6c-5c1f-af2c-dafca2ee009b",
+          "excerpt": "Lors d’un précédent article, je vous avais parlé de la richesse de l’écosystème React. Aujourd’hui, je vais vous parler d’un framework React…"
+        },
+        {
+          "frontmatter": {
+            "date": "August 22, 2022",
+            "title": "Les compétences indispensables pour un développeur !",
+            "slug": "les-competences-indispensables-pour-un-developpeur",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#d8c8a8",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/214283de647934d3bd26462e8911fd90/cca54/skills.jpg",
+                      "srcSet": "/static/214283de647934d3bd26462e8911fd90/e102b/skills.jpg 43w,\n/static/214283de647934d3bd26462e8911fd90/3ee87/skills.jpg 86w,\n/static/214283de647934d3bd26462e8911fd90/cca54/skills.jpg 172w,\n/static/214283de647934d3bd26462e8911fd90/4db5e/skills.jpg 344w",
+                      "sizes": "(min-width: 172px) 172px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/214283de647934d3bd26462e8911fd90/3132b/skills.webp 43w,\n/static/214283de647934d3bd26462e8911fd90/92fbd/skills.webp 86w,\n/static/214283de647934d3bd26462e8911fd90/f3a54/skills.webp 172w,\n/static/214283de647934d3bd26462e8911fd90/0cff0/skills.webp 344w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 172px) 172px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 172,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "5dd8af44-b810-58b1-8f2b-d35dfe9f8a49",
+          "excerpt": "Le métier de développeur est assez particulier, que vous soyez développeur front end, back end, Python, Java … Il nécessite des compétences…"
+        },
+        {
+          "frontmatter": {
+            "date": "August 8, 2022",
+            "title": "5 Bibliothèques React à utiliser !",
+            "slug": "5-bibliotheques-react-a-utiliser",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#182828",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/5dd72b61e716eae08bc0938e7b9d38f1/f39b0/React.jpg",
+                      "srcSet": "/static/5dd72b61e716eae08bc0938e7b9d38f1/06f15/React.jpg 46w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/4e3bd/React.jpg 92w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/f39b0/React.jpg 183w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/a1cd5/React.jpg 366w",
+                      "sizes": "(min-width: 183px) 183px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/5dd72b61e716eae08bc0938e7b9d38f1/2b1aa/React.webp 46w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/5810e/React.webp 92w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/4c67c/React.webp 183w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/0a94f/React.webp 366w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 183px) 183px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 183,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "7a7e12eb-562c-54cc-8f39-c0e3815b96ae",
+          "excerpt": "La communauté React est très active et cela se voit dans la quantité monstrueuse de bibliothèques disponibles. Alors dans cet article, je…"
+        }
+      ]
+    }
+  }
