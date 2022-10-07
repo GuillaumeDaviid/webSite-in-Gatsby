@@ -1,0 +1,336 @@
+{
+    "allMdx": {
+      "nodes": [
+        {
+          "frontmatter": {
+            "date": "September 14, 2022",
+            "title": "Pourquoi utiliser Next.JS ?",
+            "slug": "pourquoi-utiliser-nextjs",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#080808",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/7af5a20b055f7e5d1109e6aa6b2305c7/577f0/Nextjs.png",
+                      "srcSet": "/static/7af5a20b055f7e5d1109e6aa6b2305c7/f46b5/Nextjs.png 42w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/12d5d/Nextjs.png 84w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/577f0/Nextjs.png 167w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/f5f50/Nextjs.png 334w",
+                      "sizes": "(min-width: 167px) 167px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/7af5a20b055f7e5d1109e6aa6b2305c7/25c77/Nextjs.webp 42w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/1c99e/Nextjs.webp 84w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/e7b8f/Nextjs.webp 167w,\n/static/7af5a20b055f7e5d1109e6aa6b2305c7/b19c2/Nextjs.webp 334w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 167px) 167px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 167,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "6306cfe7-e7cb-535d-afdf-666d9d915b54",
+          "excerpt": "Après vous avoir parlé de Gatsby, il est temps pour moi de vous parler d’un autre framework ReactJS qui lui aussi gagne en popularité, Next…"
+        },
+        {
+          "frontmatter": {
+            "date": "September 7, 2022",
+            "title": "Pourquoi utiliser Gatsby pour votre site web ?",
+            "slug": "pourquoi-utiliser-gatsby-pour-votre-site-web",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#080808",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/2bab627a79337d768c8221c571d2c81a/ccf6a/gatsby.png",
+                      "srcSet": "/static/2bab627a79337d768c8221c571d2c81a/1170e/gatsby.png 45w,\n/static/2bab627a79337d768c8221c571d2c81a/b2b7e/gatsby.png 89w,\n/static/2bab627a79337d768c8221c571d2c81a/ccf6a/gatsby.png 178w,\n/static/2bab627a79337d768c8221c571d2c81a/3c234/gatsby.png 356w",
+                      "sizes": "(min-width: 178px) 178px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/2bab627a79337d768c8221c571d2c81a/1b4b4/gatsby.webp 45w,\n/static/2bab627a79337d768c8221c571d2c81a/4c978/gatsby.webp 89w,\n/static/2bab627a79337d768c8221c571d2c81a/744a3/gatsby.webp 178w,\n/static/2bab627a79337d768c8221c571d2c81a/723ea/gatsby.webp 356w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 178px) 178px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 178,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "e1aee602-4e6c-5c1f-af2c-dafca2ee009b",
+          "excerpt": "Lors d’un précédent article, je vous avais parlé de la richesse de l’écosystème React. Aujourd’hui, je vais vous parler d’un framework React…"
+        },
+        {
+          "frontmatter": {
+            "date": "August 22, 2022",
+            "title": "Les compétences indispensables pour un développeur !",
+            "slug": "les-competences-indispensables-pour-un-developpeur",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#d8c8a8",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/214283de647934d3bd26462e8911fd90/cca54/skills.jpg",
+                      "srcSet": "/static/214283de647934d3bd26462e8911fd90/e102b/skills.jpg 43w,\n/static/214283de647934d3bd26462e8911fd90/3ee87/skills.jpg 86w,\n/static/214283de647934d3bd26462e8911fd90/cca54/skills.jpg 172w,\n/static/214283de647934d3bd26462e8911fd90/4db5e/skills.jpg 344w",
+                      "sizes": "(min-width: 172px) 172px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/214283de647934d3bd26462e8911fd90/3132b/skills.webp 43w,\n/static/214283de647934d3bd26462e8911fd90/92fbd/skills.webp 86w,\n/static/214283de647934d3bd26462e8911fd90/f3a54/skills.webp 172w,\n/static/214283de647934d3bd26462e8911fd90/0cff0/skills.webp 344w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 172px) 172px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 172,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "5dd8af44-b810-58b1-8f2b-d35dfe9f8a49",
+          "excerpt": "Le métier de développeur est assez particulier, que vous soyez développeur front end, back end, Python, Java … Il nécessite des compétences…"
+        },
+        {
+          "frontmatter": {
+            "date": "August 8, 2022",
+            "title": "5 Bibliothèques React à utiliser !",
+            "slug": "5-bibliotheques-react-a-utiliser",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#182828",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/5dd72b61e716eae08bc0938e7b9d38f1/f39b0/React.jpg",
+                      "srcSet": "/static/5dd72b61e716eae08bc0938e7b9d38f1/06f15/React.jpg 46w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/4e3bd/React.jpg 92w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/f39b0/React.jpg 183w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/a1cd5/React.jpg 366w",
+                      "sizes": "(min-width: 183px) 183px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/5dd72b61e716eae08bc0938e7b9d38f1/2b1aa/React.webp 46w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/5810e/React.webp 92w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/4c67c/React.webp 183w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/0a94f/React.webp 366w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 183px) 183px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 183,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "7a7e12eb-562c-54cc-8f39-c0e3815b96ae",
+          "excerpt": "La communauté React est très active et cela se voit dans la quantité monstrueuse de bibliothèques disponibles. Alors dans cet article, je…"
+        },
+        {
+          "frontmatter": {
+            "date": "August 1, 2022",
+            "title": "Pourquoi j’évite le nesting avec SASS ?",
+            "slug": "pourquoi-j-evite-le-nesting-avec-sass",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#080808",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/0ec74609ffa954b507047f68fb06de8b/37295/sass-logo.png",
+                      "srcSet": "/static/0ec74609ffa954b507047f68fb06de8b/a79a5/sass-logo.png 32w,\n/static/0ec74609ffa954b507047f68fb06de8b/07b71/sass-logo.png 65w,\n/static/0ec74609ffa954b507047f68fb06de8b/37295/sass-logo.png 129w,\n/static/0ec74609ffa954b507047f68fb06de8b/fa6cc/sass-logo.png 258w",
+                      "sizes": "(min-width: 129px) 129px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/0ec74609ffa954b507047f68fb06de8b/5bdaa/sass-logo.webp 32w,\n/static/0ec74609ffa954b507047f68fb06de8b/19140/sass-logo.webp 65w,\n/static/0ec74609ffa954b507047f68fb06de8b/1d1f9/sass-logo.webp 129w,\n/static/0ec74609ffa954b507047f68fb06de8b/ef5fe/sass-logo.webp 258w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 129px) 129px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 129,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "3042f124-1abc-5204-b796-3e158d65abbd",
+          "excerpt": "Le nesting est considéré comme l’un des arguments à l’utilisation de SASS ou d’autre préprocesseurs. Pourtant il est aussi l’une des ces…"
+        },
+        {
+          "frontmatter": {
+            "date": "July 25, 2022",
+            "title": "Pourquoi utiliser TypeScript ?",
+            "slug": "pourquoi-utiliser-typescript",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#3878c8",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/500296172157e2028d7f850eeac91183/37503/typescript-1.png",
+                      "srcSet": "/static/500296172157e2028d7f850eeac91183/55119/typescript-1.png 48w,\n/static/500296172157e2028d7f850eeac91183/a3ee6/typescript-1.png 95w,\n/static/500296172157e2028d7f850eeac91183/37503/typescript-1.png 190w,\n/static/500296172157e2028d7f850eeac91183/5130f/typescript-1.png 380w",
+                      "sizes": "(min-width: 190px) 190px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/500296172157e2028d7f850eeac91183/28e4e/typescript-1.webp 48w,\n/static/500296172157e2028d7f850eeac91183/24878/typescript-1.webp 95w,\n/static/500296172157e2028d7f850eeac91183/0a6e4/typescript-1.webp 190w,\n/static/500296172157e2028d7f850eeac91183/bca0f/typescript-1.webp 380w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 190px) 190px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 190,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "19ae8adc-faa3-59f8-9066-6aea52c62b4e",
+          "excerpt": "Pourquoi devriez-vous utiliser TypeScript plutôt que JavaScript ? Cela fait maintenant un certain temps que j’utilise TypeScript dans la…"
+        },
+        {
+          "frontmatter": {
+            "date": "July 4, 2022",
+            "title": "React Reveal",
+            "slug": "react-reveal",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#182828",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/5dd72b61e716eae08bc0938e7b9d38f1/f39b0/React.jpg",
+                      "srcSet": "/static/5dd72b61e716eae08bc0938e7b9d38f1/06f15/React.jpg 46w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/4e3bd/React.jpg 92w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/f39b0/React.jpg 183w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/a1cd5/React.jpg 366w",
+                      "sizes": "(min-width: 183px) 183px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/5dd72b61e716eae08bc0938e7b9d38f1/2b1aa/React.webp 46w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/5810e/React.webp 92w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/4c67c/React.webp 183w,\n/static/5dd72b61e716eae08bc0938e7b9d38f1/0a94f/React.webp 366w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 183px) 183px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 183,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "b9e56c5b-0e20-5a0f-886c-c1fb99b94e44",
+          "excerpt": "Il y a quelques mois, je vous faisais découvrir scroll reveal, une librairie JavaScript qui permet d’appliquer un effet de scroll sur un…"
+        },
+        {
+          "frontmatter": {
+            "date": "June 25, 2022",
+            "title": "Comment intégrer du code sur Medium ?",
+            "slug": "comment-integrer-du-code-sur-medium",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#f8f8f8",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/09f5c6ae0d73877c4fc2595170735ff9/37503/gist.png",
+                      "srcSet": "/static/09f5c6ae0d73877c4fc2595170735ff9/55119/gist.png 48w,\n/static/09f5c6ae0d73877c4fc2595170735ff9/a3ee6/gist.png 95w,\n/static/09f5c6ae0d73877c4fc2595170735ff9/37503/gist.png 190w,\n/static/09f5c6ae0d73877c4fc2595170735ff9/5130f/gist.png 380w",
+                      "sizes": "(min-width: 190px) 190px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/09f5c6ae0d73877c4fc2595170735ff9/28e4e/gist.webp 48w,\n/static/09f5c6ae0d73877c4fc2595170735ff9/24878/gist.webp 95w,\n/static/09f5c6ae0d73877c4fc2595170735ff9/0a6e4/gist.webp 190w,\n/static/09f5c6ae0d73877c4fc2595170735ff9/bca0f/gist.webp 380w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 190px) 190px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 190,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "68723831-b8b5-5cfd-baa4-f5a3f15b5f47",
+          "excerpt": "Vous souhaitez intégrer du code à vos articles, mais vous ne savez pas comment faire ? Alors, vous êtes au bon endroit ! Medium ne propose…"
+        },
+        {
+          "frontmatter": {
+            "date": "June 15, 2022",
+            "title": "CSS GRID POUR LES DÉBUTANTS",
+            "slug": "css-grid-pour-les-debutants",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#4858f8",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/18ecdc73078592d328ec9183572414ba/0f3a1/css_grid.jpg",
+                      "srcSet": "/static/18ecdc73078592d328ec9183572414ba/ae53f/css_grid.jpg 48w,\n/static/18ecdc73078592d328ec9183572414ba/c32e3/css_grid.jpg 95w,\n/static/18ecdc73078592d328ec9183572414ba/0f3a1/css_grid.jpg 190w,\n/static/18ecdc73078592d328ec9183572414ba/6864c/css_grid.jpg 380w",
+                      "sizes": "(min-width: 190px) 190px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/18ecdc73078592d328ec9183572414ba/28e4e/css_grid.webp 48w,\n/static/18ecdc73078592d328ec9183572414ba/24878/css_grid.webp 95w,\n/static/18ecdc73078592d328ec9183572414ba/0a6e4/css_grid.webp 190w,\n/static/18ecdc73078592d328ec9183572414ba/bca0f/css_grid.webp 380w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 190px) 190px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 190,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "6c3612a3-ccc2-58a1-bd9d-6001c1643ceb",
+          "excerpt": "Il y a quelques semaines, je vous parlai de flexbox et à quel point il avait révolutionné la mise en page en CSS. Aujourd’hui, je vais vous…"
+        },
+        {
+          "frontmatter": {
+            "date": "June 6, 2022",
+            "title": "Présentation des hooks React",
+            "slug": "presentation-des-hooks-react",
+            "featuredImage": {
+              "childImageSharp": {
+                "gatsbyImageData": {
+                  "layout": "constrained",
+                  "backgroundColor": "#282838",
+                  "images": {
+                    "fallback": {
+                      "src": "/static/31a1b0c81bdf8ade10eeb551cb8ac43a/37503/react-hooks.png",
+                      "srcSet": "/static/31a1b0c81bdf8ade10eeb551cb8ac43a/55119/react-hooks.png 48w,\n/static/31a1b0c81bdf8ade10eeb551cb8ac43a/a3ee6/react-hooks.png 95w,\n/static/31a1b0c81bdf8ade10eeb551cb8ac43a/37503/react-hooks.png 190w,\n/static/31a1b0c81bdf8ade10eeb551cb8ac43a/5130f/react-hooks.png 380w",
+                      "sizes": "(min-width: 190px) 190px, 100vw"
+                    },
+                    "sources": [
+                      {
+                        "srcSet": "/static/31a1b0c81bdf8ade10eeb551cb8ac43a/28e4e/react-hooks.webp 48w,\n/static/31a1b0c81bdf8ade10eeb551cb8ac43a/24878/react-hooks.webp 95w,\n/static/31a1b0c81bdf8ade10eeb551cb8ac43a/0a6e4/react-hooks.webp 190w,\n/static/31a1b0c81bdf8ade10eeb551cb8ac43a/bca0f/react-hooks.webp 380w",
+                        "type": "image/webp",
+                        "sizes": "(min-width: 190px) 190px, 100vw"
+                      }
+                    ]
+                  },
+                  "width": 190,
+                  "height": 100
+                }
+              }
+            }
+          },
+          "id": "ec6ecac4-8592-58d7-a96f-457d9751ba03",
+          "excerpt": "Les hooks sont apparu avec la version 16.8 de React et avec eux dans leurs bagages, un tas de fonctionnalité qui vont alors faciliter la vie…"
+        }
+      ]
+    }
+  }

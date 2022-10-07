@@ -75,9 +75,9 @@ function handleClickPrevious() {
         <div >
           <div className='Article_items-elt'>{data.allMdx.nodes.map((node:any) => (
               <div className="Article_items-elt-item">
-            <GatsbyImage image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt='asdsf' className='blog_image'/>
+            <GatsbyImage image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt={node.frontmatter.slug} className='blog_image'/>
             
-            <h2 className='item_link'>
+            <h2 className='item_link' data-testid="items">
               <Link to={`/blog/${node.frontmatter.slug}`}>
                 {node.frontmatter.title}
               </Link>
