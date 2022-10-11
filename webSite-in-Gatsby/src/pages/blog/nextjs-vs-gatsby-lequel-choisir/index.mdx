@@ -1,0 +1,76 @@
+---
+title: "Next.js vs Gatsby, lequel Choisir ?"
+date: "2022-09-24"
+slug: "nextjs-vs-gatsby-lequel-choisir"
+featuredImage: "./next-vs-gatsby.png"
+hero_image: "./next-vs-gatsby.png"
+hero_image_alt: "Next.js vs Gatsby"
+hero_image_credit_text: "React"
+---
+
+Dans les deux précédents articles, je vous ai présenté deux framework React, **Gatsby** et **Next.JS**. Mais il peut être parfois compliqué de faire un choix entre les deux, c’est pour cela qu’aujourd’hui nous allons les comparer, voir leurs avantages, mais aussi leurs inconvénients et surtout, à quel type de projet ils conviennent.
+
+Si vous voulez avoir une présentation non-exhaustive de ces deux framework, vous pouvez bien sûr retrouver l’article sur **Next.js**, mais aussi sur **Gatsby**.
+
+Nous verrons qu’il existe des différences qu’il faut impérativement connaître avant de faire votre choix qui peut impacter la bonne conduite de votre projet et sa réussite. Commençons toute suite par la première différence.
+
+## Le Server Side Rendering (SSR)
+Première différence notable entre nos deux framework, le server side rendering ou le rendu coté serveur. Même si la différence est plutôt subtil et n’aura aucune incidence sur l’expérience utilisateur, elle peut en avoir pour les développeurs.
+
+En effet, **Next.js** propose un rendu coté serveur, c’est-à-dire que les pages seront traité par un serveur NodeJS au moment de la requête par le client. Pour ce qui est de **Gatsby**, le rendu statique est la seule option possible (en fait, il est possible d’utiliser le SSR mais il est déconseillé). Contrairement à Next, Gatsby va générer les pages HTML et JavaScript au moment du build.
+
+Sachant cela, il y a plusieurs choses à prendre en compte.
+
+Premièrement, les options que vous propose votre hébergement. Si ce dernier ne vous offre pas la possibilité d’utiliser NodeJS, rabattez-vous sur **Gatsby** ou allez voir un concurrent comme par exemple Vercel (crée par les développeurs de NextJS) ou encore Netlify si l’utilisation de Next est une obligation pour vous.
+
+Dans un second temps, il faudra prendre en compte que le choix de Gatsby implique de re-build votre application à chaque modification de celle-ci ce qui peut être une perte de temps dans la phase de production.
+
+## La gestion des données
+Autre différence notable, la gestion des données différent entre nos framework.
+
+L’une des grandes particularités de **Gatsby** est le fait de privilégier l’utilisation de **GraphQL** dans la récupération des données. Il vous permettra de générer vos pages web avec des données provenant d’une API tierce facilement. GraphQL apporte de nombreux avantages qui ont favorisé ce choix de la communauté Gatsby. Par exemple, l’optimisation automatique des images qui accélère le chargement de la page et améliore l’expérience utilisateur ou encore le fait que les données sont chargés dans les composants ou elles sont utilisées, ce qui permet de voir beaucoup plus facilement d’où viennent les données et comment les modifier.
+
+Pour ce qui est de **NextJS**, il vous laisse beaucoup plus de choix. En effet, si vous souhaitez la aussi utiliser **GraphQL**, vous le pouvez, tout comme si vous souhaitez utiliser une API REST. Pour ce faire, il existe des méthodes qui ont des objectifs divers, parmi eux ont retrouve GetStaticProps ou encore GetServerSideProps. Vous l’avez compris, ils dépendent de votre choix de rendu pour votre application web.
+
+Il est maintenant l’heure du choix. Il sera assez simple si vous souhaitez éviter l’utilisation de **GraphQL**, par contre, si vous souhaitez utiliser ce dernier, le choix de **Gatsby** sera alors très pertinent.
+Si vous souhaitez une grande flexibilité dans la gestion de vos données, alors votre choix devrait se porter sur **Next**. Si la façon de récupérer les données et de les gérer n’a pas d’importance pour vous, alors vous êtes libre de choisir le framework de votre choix pour votre prochain projet.
+
+## Écosystème et Environnement
+Que ce soit **Next** ou **Gatsby**, les deux ont une communauté très activent qui contribuent au développement et à l’avancement de ces derniers. Mais existe des différences qui ne sont pas à prendre à la légère surtout si le temps que vous avez à consacrer à votre projet est une variable importante pour vous.
+
+Effectivement, si vous souhaitez déployer rapidement votre projet web, **Gatsby** vous fera gagner un temps inestimable grâce à sa large bibliothèque de plugin. Ces derniers sont développé par la communauté de développeur **Gatsby** et il en existe plus de 3000 et vous pouvez les retrouver sur le site officiel. Parmi eux, on retrouve par exemple gatsby-source-filesystem qui permet de récupérer des données pour votre application Gatsby venant de votre systémique de fichier local. Vous pourrez ensuite interroger ces fichiers à l’aide de GraphQL.
+Je pourrais aussi vous parler du fait que Gatsby détient la plus grande bibliothèque de template et de thèmes parmi tous les framework React sur le marché qui sont eux aussi disponible sur le site officiel ou sur Github.
+
+Pour Next.js, pas de communauté de plugin, cela aura pour conséquence de vous obliger à faire tout vous-même. Par exemple, si vous voulez un blog utilisant du Markdown, il vous faudra récupérer et transformer les données vous-même. Cela n’a pas forcément que des inconvénients, car il offre la possibilité aux développeurs d’avoir le contrôle sur toutes les lignes de code de leurs projets.
+
+Généralement, ici, le choix sera assez simple et si la facilité et rapidité de développement est extrêmement important pour vous, Gatsby ira de soi, surtout que la communauté continue de développer de nouveaux plugins et template chaque jour pour des cas d’utilisation que vous n’imaginez même pas encore. Bien sûr, cela a l’inconvénient d’être dépendant de la communauté en cas de problèmes. Et oui, il faudra attendre que les bugs potentiels soient fix par la communauté ou que vous vous y collez vous-même. Si cela est un problème pour vous, vous devriez envisager d’utiliser Next.js à la place.
+
+## Les points communs :
+Vous avez déjà pu vous en rendre compte, mais tout ne sépare pas nos deux framework.
+
+### Systéme de Routing
+
+Comme j’ai déjà pu vous le dire à plusieurs reprises lors des précédents articles, React ne nous offre qu’une base pour coder une application. En réalité, il va nous manquer beaucoup de choses pour pouvoir faire un projet complet. Le système de routing fait partie des manques qui ne nous permettent pas de pouvoir mener à bien un projet avec React par défaut.
+
+Bonne nouvelle, **Nextjs** et **Gatsby.js** nous offre par défaut un système de router. Tous les deux basés sur @reach/Router qui permet notamment le pré chargement des pages, ou encore de prendre en charge le rendu coté serveur.
+
+### SEO Friendly
+
+C’est l’une des raisons qui pousse les développeurs front-end à choisir l’un ou l’autre. En effet, que ce soit Next ou Gatsby, chacun apporte des fonctionnalités qui répondent parfaitement aux critères de classement de notre bon vieux Google.
+
+Le fait, par exemple que Next.js permette au serveur de transformer le code en HTML ou que Gatsby transforme au build notre code en HTML permet donc aux bots Google de mieux comprendre le code et donc le mieux le référencer. Couplé à toutes les optimisations qu’offrent les deux frameworks, et qui permettent surtout une plus grande rapidité de chargement des pages qui lui aussi est pris en compte dans le référencement.
+
+### Expérience développeurs et utilisateurs
+
+Pour finir rapidement avec cette liste non-exhaustive des points communs, il est important de parler de l’expérience qu’ils offrent que ce soit pour les développeurs, mais surtout pour les utilisateurs.
+
+Pour l’expérience développeurs, leur communauté, mais aussi les outils que chacun offre contribuent largement à l’améliorer. Le fait aussi qu’ils soient complets offre une bien meilleure expérience qu’avec React.
+
+Pour les utilisateurs, j’en ai déjà un peu parlé. Chargement plus rapide, pré chargement … Sont autant de raison qui améliore significativement l’expérience utilisateur.
+
+## Conclusion
+En résumé, les deux framework sont plutôt proche. Votre choix se portera généralement sur des détails tels que votre affinité avec **GraphQL** ou le rendu coté serveur même si celui-ci peut être pris en charge par **Gatsby**.
+
+Pour simplifier un peu votre choix, si votre page a besoin d’être mis à jour régulièrement, il est plutôt conseillé d’utiliser **Next.js**, par contre si ce n’est pas le cas, il est conseillé d’utiliser **Gatsby**.
+
+Pour finir, les deux frameworks sont d’excellent choix et sont fréquemment mis à jour, alors essayez les tous les deux et voyez lequel vous préférez entre les deux pour votre prochain projet.

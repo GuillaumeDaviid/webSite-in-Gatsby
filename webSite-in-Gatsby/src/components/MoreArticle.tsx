@@ -1,5 +1,4 @@
 import * as React from 'react'
-import {useState} from 'react'
 import './styles/MoreArticle.scss'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
@@ -30,8 +29,8 @@ export default function MoreArticle () {
       `}
       render={data => (
         <div>
-          <div className='MoreArticle_items-elt'>{data.allMdx.nodes.map((node:any) => (
-              <div className="MoreArticle_items-elt-item">
+          <div className='MoreArticle_items-elt'>{data.allMdx.nodes.map((node:any, index:any) => (
+              <div className="MoreArticle_items-elt-item" key={index}>
             <GatsbyImage image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt={node.frontmatter.slug} className='blog_image'/>
             
             <h2 className='item_link' data-testid="items">

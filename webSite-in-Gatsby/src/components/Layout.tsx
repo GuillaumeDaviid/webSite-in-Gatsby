@@ -1,8 +1,13 @@
-import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import React from 'react'
+import { Link } from 'gatsby'
 import './styles/Layout.scss'
 
-const Layout = ({ pageTitle, children }:any) => {
+type Props = {
+  pageTitle: string;
+  children: import('react').ReactNode
+}
+
+const Layout = ({ pageTitle, children }:Props) => {
 
     return(
         <div className='Layout'>
@@ -11,7 +16,7 @@ const Layout = ({ pageTitle, children }:any) => {
             <nav>
         <ul className='Layout__nav--children' >
           <li className='nav__elt' data-testid="li"><Link to="/" >Home</Link></li>
-          <li className='nav__elt' data-testid="li"><Link to="/about" >About</Link></li>
+          <li className='nav__elt' data-testid="li"><Link to="/#introduction" >About</Link></li>
           <li className='nav__elt' data-testid="li"><Link to="/blog">Blog</Link></li>
         </ul>
       </nav>

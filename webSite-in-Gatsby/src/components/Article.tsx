@@ -1,5 +1,4 @@
-import * as React from 'react'
-import {useState} from 'react'
+import React, {useState} from 'react'
 import './styles/Article.scss'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
@@ -73,8 +72,8 @@ function handleClickPrevious() {
       `}
       render={data => (
         <div >
-          <div className='Article_items-elt'>{data.allMdx.nodes.map((node:any) => (
-              <div className="Article_items-elt-item">
+          <div className='Article_items-elt'>{data.allMdx.nodes.map((node:any, index:number) => (
+              <div className="Article_items-elt-item" key={index}>
             <GatsbyImage image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt={node.frontmatter.slug} className='blog_image'/>
             
             <h2 className='item_link' data-testid="items">

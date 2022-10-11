@@ -27,7 +27,7 @@ exports[`Layout renders correctly 1`] = `
           data-testid="li"
         >
           <a
-            href="/about"
+            href="/#introduction"
           >
             About
           </a>

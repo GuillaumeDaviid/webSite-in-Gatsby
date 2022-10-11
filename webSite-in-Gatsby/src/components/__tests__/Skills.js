@@ -3,7 +3,7 @@ import renderer from "react-test-renderer"
 import Skills from "../Skills.tsx"
 import { render, screen } from "@testing-library/react"
 
-describe("Header", () => {
+describe("Skills", () => {
   it("renders correctly", () => {
     const tree = renderer
       .create(<Skills />)
