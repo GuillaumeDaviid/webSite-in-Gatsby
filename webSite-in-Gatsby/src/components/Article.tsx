@@ -1,5 +1,4 @@
-import * as React from 'react'
-import {useState} from 'react'
+import React, {useState} from 'react'
 import './styles/Article.scss'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'

@@ -1,20 +1,13 @@
-import * as React from 'react'
-import { useState } from "react"
+import React, { useState } from 'react'
 import './styles/Portfolio.scss'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Link } from 'gatsby'
-/*
-import netflix from '../images/netflix.png'
-import checkers from '../images/checkers.png'
-import academie from '../images/01academie.png'
-import home from '../images/01home.png'
-import course from '../images/01courses.png'*/
 
 export default function Portfolio() {
     const [selected, setSelected] = useState('all');
 
-    function handleClick(cat:any) {
-        setSelected(cat)
+    function handleClick(category:string) {
+        setSelected(category)
     }
 
     return(
