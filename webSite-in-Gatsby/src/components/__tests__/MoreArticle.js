@@ -11,7 +11,7 @@ beforeEach(() => {
   )
 })
 
-describe("Header", () => {
+describe("MoreArticle", () => {
   it("renders correctly", () => {
     const tree = renderer
       .create(<MoreArticle />)

@@ -73,8 +73,8 @@ function handleClickPrevious() {
       `}
       render={data => (
         <div >
-          <div className='Article_items-elt'>{data.allMdx.nodes.map((node:any) => (
-              <div className="Article_items-elt-item">
+          <div className='Article_items-elt'>{data.allMdx.nodes.map((node:any, index:number) => (
+              <div className="Article_items-elt-item" key={index}>
             <GatsbyImage image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt={node.frontmatter.slug} className='blog_image'/>
             
             <h2 className='item_link' data-testid="items">

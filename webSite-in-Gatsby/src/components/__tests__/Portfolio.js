@@ -3,7 +3,7 @@ import renderer from "react-test-renderer"
 import Portfolio from "../Portfolio.tsx"
 import { render, screen } from "@testing-library/react"
 
-describe("Header", () => {
+describe("Portfolio", () => {
   it("renders correctly", () => {
     const tree = renderer
       .create(<Portfolio />)
