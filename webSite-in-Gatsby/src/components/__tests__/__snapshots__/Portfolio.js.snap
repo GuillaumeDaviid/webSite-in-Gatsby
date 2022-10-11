@@ -25,28 +25,28 @@ exports[`Portfolio renders correctly 1`] = `
         data-testid="all"
         onClick={[Function]}
       >
-        All
+        ALL
       </li>
       <li
         className="notSelected"
         data-testid="front"
         onClick={[Function]}
       >
-        Front end
+        FRONT END
       </li>
       <li
         className="notSelected"
         data-testid="full"
         onClick={[Function]}
       >
-        Full stack
+        FULL STACK
       </li>
       <li
         className="notSelected"
         data-testid="mobile"
         onClick={[Function]}
       >
-        Mobile
+        MOBILE
       </li>
     </ul>
     <div
