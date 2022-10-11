@@ -20,10 +20,10 @@ export default function Portfolio() {
             
 
             <ul className="Portfolio_btn">
-                <li className={`${selected === "all" ? `selected` : `notSelected`}`} onClick={() => handleClick("all")} data-testid="all">All</li>
-                <li className={`${selected === "front" ? `selected` : `notSelected`}`} onClick={() => handleClick("front")} data-testid="front">Front end</li>
-                <li className={`${selected === "full" ? `selected` : `notSelected`}`} onClick={() => handleClick("full")} data-testid="full">Full stack</li>
-                <li className={`${selected === "mobile" ? `selected` : `notSelected`}`} onClick={() => handleClick("mobile")} data-testid="mobile">Mobile</li>
+                <li className={`${selected === "all" ? `selected` : `notSelected`}`} onClick={() => handleClick("all")} data-testid="all">ALL</li>
+                <li className={`${selected === "front" ? `selected` : `notSelected`}`} onClick={() => handleClick("front")} data-testid="front">FRONT END</li>
+                <li className={`${selected === "full" ? `selected` : `notSelected`}`} onClick={() => handleClick("full")} data-testid="full">FULL STACK</li>
+                <li className={`${selected === "mobile" ? `selected` : `notSelected`}`} onClick={() => handleClick("mobile")} data-testid="mobile">MOBILE</li>
             </ul>
             <div className="Portfolio_items">
 

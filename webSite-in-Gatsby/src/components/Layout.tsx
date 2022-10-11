@@ -1,8 +1,13 @@
-import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
+import React from 'react'
+import { Link } from 'gatsby'
 import './styles/Layout.scss'
 
-const Layout = ({ pageTitle, children }:any) => {
+type Props = {
+  pageTitle: string;
+  children: import('react').ReactNode
+}
+
+const Layout = ({ pageTitle, children }:Props) => {
 
     return(
         <div className='Layout'>
