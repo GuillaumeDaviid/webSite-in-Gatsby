@@ -156,6 +156,8 @@ a span {
     height: 50px;
     width: 50px;
     line-height: 50px;
+    cursor: pointer;
+    text-align: center;
 }
 
 .cd-menu-trigger:hover span::after {

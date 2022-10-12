@@ -14,6 +14,7 @@ import '../components/styles/global.scss'
 
 const IndexPage = () => {
   return (
+    <main>
     <div>
     
     <Helmet>
@@ -31,6 +32,7 @@ const IndexPage = () => {
       <Footer />
     
     </div>
+    </main>
   )
 }
 

@@ -23,7 +23,7 @@ export default function Why() {
                         alt="Smartphone responsive"
                         src='../images/app.png'
                     />
-                    <h5 className="items-title">Responsive Design</h5>
+                    <h3 className="items-title">Responsive Design</h3>
                     <p className="items-text">Site web accessible sur mobile.</p>
                 </div>
 
@@ -35,7 +35,7 @@ export default function Why() {
                         alt="Smartphone responsive"
                         src='../images/app2.png'
                     />
-                    <h5 className="items-title">Responsive Layout</h5>
+                    <h3 className="items-title">Responsive Layout</h3>
                     <p className="items-text">Site web accessible sur tablette.</p>
                 </div>
 
@@ -47,7 +47,7 @@ export default function Why() {
                         alt="Smartphone responsive"
                         src='../images/makbook.png'
                     />
-                    <h5 className="items-title">React.js</h5>
+                    <h3 className="items-title">React.js</h3>
                     <p className="items-text">Vous avez un gros projet à venir ? React.js est utilisé par Facebook, Instagram, Twitter, Netflix ...</p>
                 </div>
             </div>

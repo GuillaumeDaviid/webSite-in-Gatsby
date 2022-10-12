@@ -22,7 +22,7 @@ export default function Form() {
                 
             <div className="Form_content-info" data-testid="info">
            
-                <h4>COORDONNEES</h4>
+                <h3>COORDONNEES</h3>
                 <p>Loos-en-Gohelle (62) - France</p>
                 <p>guillaumedaavidpro@gmail.com</p>
                 <p>Guillaume David</p>

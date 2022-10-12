@@ -23,12 +23,12 @@ export default function Header() {
                 <a href="#" className="cd-close-menu" onClick={handleClick} data-testid="closeNav">Close<span></span></a>
             </nav>
 
-            <a className="cd-menu-trigger" href="#main-nav" onClick={handleClick}><span></span></a>
+            <p className="cd-menu-trigger" onClick={handleClick}><span></span></p>
             <h1 className="Header_title" data-testid="title">GUILLAUME DAVID</h1>
 
             <div className="Header_separator-white"></div>
 
-            <h3 className="Header_description" data-testid="subTitle">Développeur Front End / Javascript / React</h3>
+            <h2 className="Header_description" data-testid="subTitle">Développeur Front End / Javascript / React</h2>
 
 
             <a className="mouse-scroll" href="#introduction" data-testid="scroll">
