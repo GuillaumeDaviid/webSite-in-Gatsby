@@ -23,7 +23,7 @@ export default function Header() {
                 <a href="#" className="cd-close-menu" onClick={handleClick} data-testid="closeNav">Close<span></span></a>
             </nav>
 
-            <p className="cd-menu-trigger" onClick={handleClick}><span></span></p>
+            <p className="cd-menu-trigger" onClick={handleClick} data-testid="burger-menu"><span></span></p>
             <h1 className="Header_title" data-testid="title">GUILLAUME DAVID</h1>
 
             <div className="Header_separator-white"></div>
