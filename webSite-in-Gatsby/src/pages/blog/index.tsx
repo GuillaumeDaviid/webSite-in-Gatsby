@@ -7,7 +7,11 @@ import Footer from '../../components/Footer'
 import favicon from '../../images/favicon.ico'
 import  {Helmet} from "react-helmet"
 
-const BlogPage = ({data}:any) => {
+type Props = {
+  data : any
+}
+
+const BlogPage = ({data}:Props) => {
   
   return (
     <div>
@@ -21,10 +25,10 @@ const BlogPage = ({data}:any) => {
       {
         data.allMdx.nodes.map((node:any) => (
           <article key={node.id} className="blog_article">
-            <GatsbyImage image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt='asdsf' className='blog_image'/>
+            <GatsbyImage image={node.frontmatter.featuredImage.childImageSharp.gatsbyImageData} alt={node.frontmatter.title} className='blog_image'/>
             <p>{node.frontmatter.date}</p>
             <h2 className="blog_title">
-              <Link to={`/blog/${node.frontmatter.slug}`}>
+              <Link to={`/blog/${node.frontmatter.slug}`} data-testid="link-post">
                 {node.frontmatter.title}
               </Link>
             </h2>
