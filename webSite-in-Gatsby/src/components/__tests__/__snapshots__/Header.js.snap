@@ -71,13 +71,13 @@ exports[`Header renders correctly 1`] = `
         <span />
       </a>
     </nav>
-    <a
+    <p
       className="cd-menu-trigger"
-      href="#main-nav"
+      data-testid="burger-menu"
       onClick={[Function]}
     >
       <span />
-    </a>
+    </p>
     <h1
       className="Header_title"
       data-testid="title"
@@ -87,12 +87,12 @@ exports[`Header renders correctly 1`] = `
     <div
       className="Header_separator-white"
     />
-    <h3
+    <h2
       className="Header_description"
       data-testid="subTitle"
     >
       Développeur Front End / Javascript / React
-    </h3>
+    </h2>
     <a
       className="mouse-scroll"
       data-testid="scroll"

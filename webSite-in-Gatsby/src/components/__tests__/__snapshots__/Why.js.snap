@@ -29,11 +29,11 @@ exports[`Why renders correctly 1`] = `
       <div
         className="image_container"
       />
-      <h5
+      <h3
         className="items-title"
       >
         Responsive Design
-      </h5>
+      </h3>
       <p
         className="items-text"
       >
@@ -47,11 +47,11 @@ exports[`Why renders correctly 1`] = `
       <div
         className="image_container"
       />
-      <h5
+      <h3
         className="items-title"
       >
         Responsive Layout
-      </h5>
+      </h3>
       <p
         className="items-text"
       >
@@ -65,11 +65,11 @@ exports[`Why renders correctly 1`] = `
       <div
         className="image_container"
       />
-      <h5
+      <h3
         className="items-title"
       >
         React.js
-      </h5>
+      </h3>
       <p
         className="items-text"
       >
