@@ -33,9 +33,9 @@ exports[`Form renders correctly 1`] = `
         className="Form_content-info"
         data-testid="info"
       >
-        <h4>
+        <h3>
           COORDONNEES
-        </h4>
+        </h3>
         <p>
           Loos-en-Gohelle (62) - France
         </p>
