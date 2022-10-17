@@ -46,6 +46,12 @@
             background-color: #e4e4e4;
             width: 66%;
         }
+
+        &-network {
+            display: flex;
+            justify-content: space-between;
+            width: 25vw;
+        }
     }
 }
 

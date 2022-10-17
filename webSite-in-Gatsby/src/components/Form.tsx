@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './styles/Form.scss'
 import ReCAPTCHA from "react-google-recaptcha"
 
 export default function Form() {
-    const [showRecaptcha, setShowRecaptcha] = useState<boolean>(true)
-
-    
     return(
         <div className="Form">
             <section id="contact">
@@ -26,15 +23,16 @@ export default function Form() {
                 <p>Loos-en-Gohelle (62) - France</p>
                 <p>guillaumedaavidpro@gmail.com</p>
                 <p>Guillaume David</p>
-                <a>Twitter</a>
-                <a>github</a>
-                <a>medium</a>
-                <a>linkedin</a>
+                <div className='Form_content-network'>
+                <a href='https://github.com/GuillaumeDaviid' target="_blank">github</a>
+                <a href='https://guillaumedaavid.medium.com/' target="_blank">medium</a>
+                <a href='https://www.linkedin.com/in/guillaume-david-5541271b9/' target="_blank">linkedin</a>
+                </div>
                
             </div>
 
             <div className="Form_content-form" data-testid="form">
-                <form id="formid" method="post" action='https://getform.io/f/ca7fb4f1-379c-4242-a03a-93dd5d1d0078' /*ou https://www.guillaumedavid.com/api/recaptcha.php  ../api/recaptcha.php */>
+                <form id="formid" method="post" action='https://getform.io/f/ca7fb4f1-379c-4242-a03a-93dd5d1d0078'>
                     <div className="row_form">
 
                     <div >
@@ -53,9 +51,8 @@ export default function Form() {
 
                     <div className="container-btn">
 
-                    {showRecaptcha && (
-                     <ReCAPTCHA sitekey="6Ld2NTUiAAAAAEdSFPLK-lrMP7Y3hmRz-3vTa-yV" data-testid="reCaptcha"/>)
-                    }
+                     <ReCAPTCHA sitekey="6Ld2NTUiAAAAAEdSFPLK-lrMP7Y3hmRz-3vTa-yV" data-testid="reCaptcha"/>
+                    
                     <input type="submit" value="ENVOYER" className="btn-form"/>
                     
                     </div>
@@ -67,7 +64,5 @@ export default function Form() {
             </div>
             </section>
         </div>
-
-        
     )
 }
