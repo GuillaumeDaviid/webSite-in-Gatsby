@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './styles/Form.scss'
 import ReCAPTCHA from "react-google-recaptcha"
 
 export default function Form() {
-    const [showRecaptcha, setShowRecaptcha] = useState<boolean>(true)
-
-    
     return(
         <div className="Form">
             <section id="contact">
@@ -53,9 +50,8 @@ export default function Form() {
 
                     <div className="container-btn">
 
-                    {showRecaptcha && (
-                     <ReCAPTCHA sitekey="6Ld2NTUiAAAAAEdSFPLK-lrMP7Y3hmRz-3vTa-yV" data-testid="reCaptcha"/>)
-                    }
+                     <ReCAPTCHA sitekey="6Ld2NTUiAAAAAEdSFPLK-lrMP7Y3hmRz-3vTa-yV" data-testid="reCaptcha"/>
+                    
                     <input type="submit" value="ENVOYER" className="btn-form"/>
                     
                     </div>
@@ -67,7 +63,5 @@ export default function Form() {
             </div>
             </section>
         </div>
-
-        
     )
 }
