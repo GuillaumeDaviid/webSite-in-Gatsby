@@ -102,7 +102,7 @@ exports[`Portfolio renders correctly 1`] = `
           </h3>
           <a
             data-testid="link"
-            href="https://www.01academie.com/"
+            href="https://github.com/GuillaumeDaviid/01-Academie-Version-React"
             target="_blank"
           >
             Link
@@ -121,7 +121,7 @@ exports[`Portfolio renders correctly 1`] = `
           </h3>
           <a
             data-testid="link"
-            href="https://www.01academie.com/"
+            href="https://github.com/GuillaumeDaviid/01-Academie-Version-React"
             target="_blank"
           >
             Link
@@ -140,7 +140,7 @@ exports[`Portfolio renders correctly 1`] = `
           </h3>
           <a
             data-testid="link"
-            href="https://www.01academie.com/"
+            href="https://github.com/GuillaumeDaviid/01-Academie-Version-React"
             target="_blank"
           >
             Link

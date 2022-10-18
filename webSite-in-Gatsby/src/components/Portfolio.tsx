@@ -31,11 +31,11 @@ export default function Portfolio() {
 
                 <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/checkers.png' />} link='https://guillaumedaviid.github.io/Checkers-Game/' title='Jeu de Dame' full={false}/>
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/01academie.png' />} link='https://www.01academie.com/' title='01 ACADEMIE' full/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/01academie.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/01courses.png' />} link='https://www.01academie.com/' title='01 ACADEMIE' full/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/01courses.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/01home.png' />} link='https://www.01academie.com/' title='01 ACADEMIE' full/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/01home.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
 
               
             </div>
