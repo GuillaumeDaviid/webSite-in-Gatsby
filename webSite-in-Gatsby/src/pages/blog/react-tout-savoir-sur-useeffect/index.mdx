@@ -1,0 +1,79 @@
+---
+title: "React : Tout savoir sur useEffect"
+date: "2022-10-20"
+slug: "react-tout-savoir-sur-useeffect"
+featuredImage: "./react-hooks.png"
+hero_image: "./react-hooks.png"
+hero_image_alt: "React hooks"
+hero_image_credit_text: "React"
+---
+
+Dans un précédent article, je vous avais fait la présentation des hooks **React**. Aujourd’hui, je vais vous détailler l’un des hooks les plus importants, **useEffect()**.
+
+React nous offre depuis sa version 16.8 la possibilité d’utiliser les hooks. Ils nous permettent notamment d’avoir un état local, mais aussi, et ce sera le sujet du jour, un hook d’effet. Si vous voulez en savoir plus, je vous invite à aller consulter [mon article](https://www.guillaumedavid.com/blog/presentation-des-hooks-react/) à ce sujet.
+
+## Pourquoi et comment utiliser useEffect ?
+
+Le hook **useEffect** est un hook qui va permettre d’effectuer des effets de bord à un moment donné du cycle de vie de nos composants. Il va par exemple déclencher une fonction de manière asynchrone lorsque que l’état du composant change. Il remplace *componentDidMount* et *componentWillUnMount* pour le composant fonctionnel. En bref, il vous permettra d’effectuer des actions qui interviennent après que React ait mis à jour le DOM.
+
+**useEffect** est d’apparence assez simple à utiliser. Après l’avoir importé, il « suffit » de lui passer en premier paramètre une fonction que vous voulez exécuter et un tableau de dépendance, qui est un paramètre optionnel, sur lequel nous reviendrons plus tard.
+
+Un exemple ci-dessous :
+
+`gist:GuillaumeDaviid/4a42397f2492fcbb68d3de986687a238`
+
+Prenons un exemple plus concret. On va créer un bouton qui incrémentera un état local que nous afficherons dans le titre du document. Voyons voir le code ci-dessous.
+
+`gist:GuillaumeDaviid/cf8b02eab136db1b1bb7089ce96d1bda`
+
+Avant d’entrer dans le détail du code, il faut noter que nous utilisons useEffect dans le corps du composant. Cela nous permet d’avoir accès aux variables d’états, mais aussi aux potentiels props.
+
+Notre code est assez simple. Quand vous cliquerez sur le bouton, la variable d’état count sera alors incrémenté de 1. Pour ce qui est de notre useEffect, il permet d’afficher comme titre du document par défaut la phrase « Vous avez cliqué 0 fois ». Si vous cliquez ensuite sur le bouton, vous remarquerez que le titre change.
+
+Vous remarquez aussi que notre titre apparaît directement après l’affichage de notre composant. En effet, comme dit précédemment, notre action est exécuté après le premier affichage et à chaque mis à jour de notre composant.
+
+Mais sachez qu’il est possible d’optimiser cela grâce au tableau de dépendance.
+
+## Le tableau des dépendances
+Le tableau des dépendances correspond au deuxième paramètre de notre hook. Il se matérialise par des crochets à l’intérieur desquels nous pouvons préciser une valeur qui, à sa modification, déclenchera l’effet de bord.
+
+Il existe alors trois cas de figure qui peuvent avoir un impact le déclenchement de votre effet de bord.
+
+### 1) Le tableau n’est pas donné
+Ce premier cas de figure correspond à notre exemple dans la partie précédente. Dans ce cas, l’effet de bord sera exécuté à chaque rendu de notre composant.
+
+### 2) Tableau de dépendance est vide
+Un tableau de dépendance vide correspond au fait que vous n’ayez pas spécifié de valeur entre vos crochets. Dans ce cas précis, l’effet de bord sera alors rendu une seule fois, après le rendu initial. C’est l’équivalent de componentDidMount pour les composants Classe.
+
+`gist:GuillaumeDaviid/a30093437e1bc7f9bb544c1fe02faa47`
+
+Si vous testez ce code, dont nous avons juste ajouté un tableau de dépendances vide, vous remarquerez que malgré l’incrémentation de la variable d’état count à chacun de vos cliques, le titre ne se met pas à jour.
+
+### 3) Une valeur est spécifiée dans le tableau des dépendances
+Lorsque vous précisez une valeur dans votre tableau des dépendances, l’effet de bord sera déclenché uniquement quand cette dite valeur sera modifiée.
+
+`gist:GuillaumeDaviid/9fa2ee3315bc9768fd525ee3e3c2658a`
+
+Dans notre exemple, le titre sera alors mis à jour à chaque modification de notre variable d’état count.
+
+## Les fonctions de nettoyage
+Dans certains cas précis, il vous sera nécessaire de faire appel dans votre useEffect à une fonction de nettoyage, c’est-à-dire, une fonction qui va effacer d’éventuels traitements qui auraient pu avoir lieu à l’intérieur de notre useEffect.
+
+Notre exemple précédent n’est pas très pertinent pour vous expliquer plus en détaille le fonctionnement des fonctions de nettoyage, alors prenons un autre exemple.
+
+`gist:GuillaumeDaviid/eb4431be8a01e96ed8dd1e8ea105820e`
+
+J’utilise pour exemple un événement, car c’est dans ce cas que les fonctions de nettoyage sont les plus pertinentes.
+
+Notre effet de bord va appliquer une fonction au moment du relâchement de notre souris, la fonction de nettoyage elle, va s’occuper de supprimer l’événement.
+
+Comme je l’ai dit, il n’est pas toujours nécessaire d’utiliser une fonction de nettoyage, mais vous devriez toujours réfléchir si vous en avez besoin ou non.
+
+## Conclusion
+Pour conclure, j’aimerais ajouter un conseil pour que vous puissiez utiliser les meilleures pratiques de **useEffect**.
+
+Utilisez un **useEffect** pour chaque effet de bord qui vous souhaitez implémenter. Ne factorisez jamais deux useEffects en un, cela pourrait provoquer pas mal de bugs inattendu.
+J’espère vous avoir éclairé et surtout appris des choses sur le hook **useEffect()**.
+
+Maintenant, c’est à vous de jouer. Pratiquez, pratiquez et pratiquez encore.
+
