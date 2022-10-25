@@ -27,16 +27,17 @@ export default function Portfolio() {
             </ul>
             <div className="Portfolio_items">
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/netflix.png' />} link='https://github.com/GuillaumeDaviid/Netflix-Clone' title='Netflix Clone' full={false}/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="Netflix" src='../images/netflix.png' />} link='https://clone-guillaumedavid.herokuapp.com/' title='Netflix Clone' full={false}/>
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/checkers.png' />} link='https://guillaumedaviid.github.io/Checkers-Game/' title='Jeu de Dame' full={false}/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="Jeu de Dames" src='../images/checkers.png' />} link='https://guillaumedaviid.github.io/Checkers-Game/' title='Jeu de Dame' full={false}/>
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/01academie.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="01 Academie" src='../images/01academie.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/01courses.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="01 Academie" src='../images/01courses.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="Smartphone responsive" src='../images/01home.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="01 Academie" src='../images/01home.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
 
+                <PortfolioItems selected={selected} image={<StaticImage alt="e-commerce" src='../images/commercia.png' />} link='https://commercia.vercel.app/' title='Commercia' full={false}/>
               
             </div>
         </div>
