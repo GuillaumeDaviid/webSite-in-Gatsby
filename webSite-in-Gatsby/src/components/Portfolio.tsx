@@ -40,6 +40,8 @@ export default function Portfolio() {
                 <PortfolioItems selected={selected} image={<StaticImage alt="e-commerce" src='../images/commercia.png' />} link='https://commercia.vercel.app/' title='Commercia' full={false}/>
               
             </div>
+
+            <a href='/portfolio' className='btn_link'><button className='btn btn_contact'>En voir plus</button></a>
         </div>
         </section>
     )

@@ -1,0 +1,47 @@
+.PortfolioIndex {
+    text-align: center;
+
+    &_items {
+        min-height: 300px;
+        overflow: hidden;
+        margin-bottom: -20px;
+    }
+
+    &_right {
+        transform : rotate(180deg);
+    }
+
+    &_carroussel {
+        &-left {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            background: transparent;
+
+            &:hover {
+                background: hsla(0,0%,100%,.5);
+                transition: all .5s ease 0s;
+            }
+        }
+
+        &-right {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            height: 100vh;
+            position: absolute;
+            right: 0;
+            background: transparent;
+
+            &:hover {
+                background: hsla(0,0%,100%,.5);
+                transition: all .5s ease 0s;
+            }
+        }
+
+        
+    }
+}
