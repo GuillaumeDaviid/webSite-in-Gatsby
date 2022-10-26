@@ -2,7 +2,7 @@ import * as React from 'react'
 import Footer from '../../components/Footer'
 import favicon from '../../images/favicon.ico'
 import Layout from '../../components/Layout'
-import  {Helmet} from "react-helmet"
+import {Helmet} from "react-helmet"
 
 
 const Portfolio = () => {
@@ -18,7 +18,8 @@ const Portfolio = () => {
         <div>
         </div>
     </Layout>
-    
+
+    <Footer />
         </div>
     )
 }
