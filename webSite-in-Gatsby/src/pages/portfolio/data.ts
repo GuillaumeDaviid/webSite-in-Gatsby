@@ -1,4 +1,4 @@
-export const productList = [
+export const portfolioList = [
 	{
         name: "Netflix",
 		title: 'Netflix - Clone Netflix',

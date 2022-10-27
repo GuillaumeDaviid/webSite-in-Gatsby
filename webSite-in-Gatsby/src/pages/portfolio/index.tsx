@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Footer from '../../components/Footer'
 import favicon from '../../images/favicon.ico'
 import Layout from '../../components/Layout'
+import { portfolioList } from './data'
 import {Helmet} from "react-helmet"
 import { StaticImage } from 'gatsby-plugin-image'
 import './index.scss'
@@ -14,7 +15,7 @@ const Portfolio = () => {
     function handleClickNext() {
         let carrousel = document.getElementById('carrousel');
         if (carrousel){
-            if (nbr < 2){
+            if (nbr < portfolioList.length){
                 setNbr(nbr + 1);
                 const newp = p - 1
                 setp(newp);
@@ -38,6 +39,39 @@ const Portfolio = () => {
         }
     }
 
+    console.log(portfolioList[0].technologies[0])
+
+    const items = portfolioList.map((data:any) =>
+        <div className='item' key={data.id}>
+
+                <h2 className='PortfolioIndex_title'>{data.title}</h2>
+                <p className='PortfolioIndex_description'>{data.description}</p>
+                <a href={data.link} className='btn_link' target="_blank"><button className='btn btn_contact'>Visiter le site</button></a>
+                <div>Carrousel d'image</div>
+
+                <h3>Fiche technique</h3>
+
+                <p className='PortfolioIndex_techique'>{data.technique}
+                </p>
+
+                <h3>Techologies</h3>
+
+                {data.technologies.map((dt:string, index:any) => {
+              return (
+                <li key={index} className='PortfolioIndex_technologies'>
+                  <ul>Task: {dt}</ul>
+                </li>
+              );
+            })}
+                
+
+                <h3>Ressources</h3>
+
+                <p className='PortfolioIndex_ressources'>Visitez le projet ici : <a href={data.link} target="_blank">{data.name}</a></p>
+
+            </div>
+    )
+
 
     return(
         <div>
@@ -58,86 +92,9 @@ const Portfolio = () => {
         </div>
         <div>
             <div className='PortfolioIndex_items'>
-
                 
                 <div className='PortfolioIndex_items-elt' id="carrousel">
-            <div className='item'>
-                {/* mettre ces infos dans un fichier json*/}
-                <h2>Netflix - Clone Netflix</h2>
-                <p>Réalisation d'un clone du site web de Netflix dans le cadre d'un projet personnel</p>
-                <a href='https://clone-guillaumedavid.herokuapp.com/' className='btn_link' target="_blank"><button className='btn btn_contact'>Visiter le site</button></a>
-                <div>Carrousel d'image</div>
-
-                <h3>Fiche technique</h3>
-
-                <p>Projet réalisé avec le framework React.js et le préprocesseur Sass (SCSS). J'ai réalisé ce projet dans le cadre d'un travail personnel.
-                    
-                    Taches : 
-                     - Développement des fonctionnalités avec React.JS
-                     - Intégration responsive SASS (SCSS)
-                     - Axios / React-router / Material-UI
-                     - Test avec React-Testing Library et JEST
-                     - CI/CD avec Heroku et Github
-                </p>
-
-                <h3>Techologies</h3>
-
-                <p>
-                - React.js
-                - Javascript
-                - SASS (SCSS)
-                - Axios
-                - React Router
-                - Material-UI
-                - React-Testing-Library / JEST
-                - Heroku
-                </p>
-                
-
-                <h3>Ressources</h3>
-
-                <p>Visitez le projet ici : <a href='https://clone-guillaumedavid.herokuapp.com/' target="_blank">Netflix</a></p>
-
-            </div>
-
-            <div className='item'>
-                {/* mettre ces infos dans un fichier json*/}
-                <h2>01 Academie</h2>
-                <p>Réalisation d'un clone du site web de Netflix dans le cadre d'un projet personnel</p>
-                <a href='https://clone-guillaumedavid.herokuapp.com/' className='btn_link' target="_blank"><button className='btn btn_contact'>Visitez le projet</button></a>
-                <div>Carrousel d'image</div>
-
-                <h3>Fiche technique</h3>
-
-                <p>Projet réalisé avec le framework React.js et le préprocesseur Sass (SCSS). J'ai réalisé ce projet dans le cadre d'un travail personnel.
-                    
-                    Taches : 
-                     - Développement des fonctionnalités avec React.JS
-                     - Intégration responsive SASS (SCSS)
-                     - Axios / React-router / Material-UI
-                     - Test avec React-Testing Library et JEST
-                     - CI/CD avec Heroku et Github
-                </p>
-
-                <h3>Techologies</h3>
-
-                <p>
-                - React.js
-                - Javascript
-                - SASS (SCSS)
-                - Axios
-                - React Router
-                - Material-UI
-                - React-Testing-Library / JEST
-                - Heroku
-                </p>
-                
-
-                <h3>Ressources</h3>
-
-                <p>Visitez le projet ici : <a href='https://clone-guillaumedavid.herokuapp.com/' target="_blank">Netflix</a></p>
-
-            </div>
+                {items}
             </div>
             </div>
             </div>
