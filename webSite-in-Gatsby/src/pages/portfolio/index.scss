@@ -1,10 +1,12 @@
 .PortfolioIndex {
     text-align: center;
+    align-items: center;
+    color: rgb(56, 56, 56);
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
 
     &_items {
-        min-height: 300px;
         overflow: hidden;
-        margin-bottom: -20px;
+
 
         &-elt {
             position: relative;
@@ -51,9 +53,30 @@
 
         
     }
+
+    &_title {
+        font-weight: bold;
+    }
+
+    &_technique {
+        width: 55vw;
+        text-align: center;
+    }
+
+    &_technologies {
+        text-align:left;
+        list-style-type: circle;
+
+        &-elt {
+            margin-top: 5px;
+        }
+    }
 }
 
 .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
     min-width: 100vw;
 }

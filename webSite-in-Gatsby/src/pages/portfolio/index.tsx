@@ -39,8 +39,6 @@ const Portfolio = () => {
         }
     }
 
-    console.log(portfolioList[0].technologies[0])
-
     const items = portfolioList.map((data:any) =>
         <div className='item' key={data.id}>
 
@@ -51,18 +49,18 @@ const Portfolio = () => {
 
                 <h3>Fiche technique</h3>
 
-                <p className='PortfolioIndex_techique'>{data.technique}
+                <p className='PortfolioIndex_technique'>{data.technique}
                 </p>
 
                 <h3>Techologies</h3>
 
+                <ul className='PortfolioIndex_technologies'>
                 {data.technologies.map((dt:string, index:any) => {
               return (
-                <li key={index} className='PortfolioIndex_technologies'>
-                  <ul>Task: {dt}</ul>
-                </li>
+                  <li key={index} className='PortfolioIndex_technologies-elt'>{dt}</li>
               );
             })}
+            </ul>
                 
 
                 <h3>Ressources</h3>
