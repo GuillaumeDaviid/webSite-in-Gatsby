@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, {useState} from 'react'
 import Footer from '../../components/Footer'
 import favicon from '../../images/favicon.ico'
 import Layout from '../../components/Layout'
@@ -8,6 +8,37 @@ import './index.scss'
 
 
 const Portfolio = () => {
+    const [p, setp] = useState(0);
+    const [nbr, setNbr] = useState(1);
+
+    function handleClickNext() {
+        let carrousel = document.getElementById('carrousel');
+        if (carrousel){
+            if (nbr < 2){
+                setNbr(nbr + 1);
+                const newp = p - 1
+                setp(newp);
+                carrousel.style.transform = "translate("+newp*100+"vw)";
+                carrousel.style.transition = "all 0.5s ease";
+            }
+        }
+    }
+    
+    function handleClickPrevious() {
+        let carrousel = document.getElementById('carrousel');
+        if (carrousel){
+            if (nbr > 1){
+                setNbr(nbr - 1);
+                const newp = p + 1;
+                setp(newp);
+            carrousel.style.transform = "translate("+newp*100+"vw)";
+            carrousel.style.transition = "all 0.5s ease";
+            }
+            
+        }
+    }
+
+
     return(
         <div>
              <Helmet>
@@ -19,14 +50,17 @@ const Portfolio = () => {
     <Layout pageTitle="Portfolio">
 
         <div className='PortfolioIndex'>
-            <div className='PortfolioIndex_carroussel-left'>
+            <div className='PortfolioIndex_carroussel-left' onClick={handleClickPrevious}>
         <StaticImage alt="Chevron" className='PortfolioIndex_left' src='../../images/chevron.png' />
         </div>
-        <div className='PortfolioIndex_carroussel-right'>
+        <div className='PortfolioIndex_carroussel-right' onClick={handleClickNext}>
         <StaticImage alt="Chevron" className="PortfolioIndex_right" src='../../images/chevron.png' />
         </div>
-
+        <div>
             <div className='PortfolioIndex_items'>
+
+                
+                <div className='PortfolioIndex_items-elt' id="carrousel">
             <div className='item'>
                 {/* mettre ces infos dans un fichier json*/}
                 <h2>Netflix - Clone Netflix</h2>
@@ -103,6 +137,8 @@ const Portfolio = () => {
 
                 <p>Visitez le projet ici : <a href='https://clone-guillaumedavid.herokuapp.com/' target="_blank">Netflix</a></p>
 
+            </div>
+            </div>
             </div>
             </div>
         </div>
