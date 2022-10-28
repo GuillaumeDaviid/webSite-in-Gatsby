@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby"
 import './styles/CarrousselPortfolio.scss'
 
@@ -37,8 +37,8 @@ export default function CarrouselPortfolio({images, id}:Props) {
     return <GatsbyImage key={index} image={image} alt="Portfolio"  className='CarrousselPortfolio_elt-item'/>
   })
 
-
     function handleClickNext() {
+      if(typeof window !== 'undefined') {
         let carrousel = document.getElementById(`carroussel-portfolio${id}`);
         if (carrousel){
             if (nbr < images.length){
@@ -49,9 +49,11 @@ export default function CarrouselPortfolio({images, id}:Props) {
                 carrousel.style.transition = "all 0.5s ease";
             }
         }
+      }
     }
     
     function handleClickPrevious() {
+      if(typeof window !== 'undefined') {
         let carrousel = document.getElementById(`carroussel-portfolio${id}`);
         if (carrousel){
             if (nbr > 1){
@@ -61,8 +63,8 @@ export default function CarrouselPortfolio({images, id}:Props) {
             carrousel.style.transform = "translate("+newp*550+"px)";
             carrousel.style.transition = "all 0.5s ease";
             }
-            
         }
+      }
     }
 
     

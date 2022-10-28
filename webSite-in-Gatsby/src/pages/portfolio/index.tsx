@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
+import CarrouselPortfolio from '../../components/CarrousselPortfolio'
 import Footer from '../../components/Footer'
 import favicon from '../../images/favicon.ico'
 import Layout from '../../components/Layout'
-import CarrouselPortfolio from '../../components/CarrousselPortfolio'
 import { portfolioList } from './data'
 import {Helmet} from "react-helmet"
 import { StaticImage } from 'gatsby-plugin-image'
@@ -15,6 +15,7 @@ const Portfolio = () => {
 
 
     function handleClickNext() {
+        if(typeof window !== 'undefined') {
         let carrousel = document.getElementById('carrousel');
         if (carrousel){
             if (nbr < portfolioList.length){
@@ -26,8 +27,10 @@ const Portfolio = () => {
             }
         }
     }
+    }
     
     function handleClickPrevious() {
+        if(typeof window !== 'undefined') {
         let carrousel = document.getElementById('carrousel');
         if (carrousel){
             if (nbr > 1){
@@ -37,8 +40,8 @@ const Portfolio = () => {
             carrousel.style.transform = "translate("+newp*100+"vw)";
             carrousel.style.transition = "all 0.5s ease";
             }
-            
         }
+    }
     }
 
     const items = portfolioList.map((item:any) =>
