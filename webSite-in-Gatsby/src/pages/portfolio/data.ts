@@ -1,5 +1,3 @@
-import netflix from '../../images/netflix.png'
-
 export const portfolioList = [
 	{
         name: "Netflix",
@@ -86,3 +84,5 @@ export const portfolioList = [
         images : ["leagora_black","leagora", "leagora-salle"],
 	},
 ]
+
+export default portfolioList

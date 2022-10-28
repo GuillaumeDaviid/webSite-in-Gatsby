@@ -53,14 +53,14 @@ const Portfolio = () => {
 
                 <h3>Fiche technique</h3>
 
-                <p className='PortfolioIndex_technique'>
+                <div className='PortfolioIndex_technique'>
                     {item.technique}
 
                     <h4>Taches :</h4>
                     <p>
                         {item.task}
                     </p>
-                </p>
+                </div>
 
                 <h3>Technologies</h3>
 
