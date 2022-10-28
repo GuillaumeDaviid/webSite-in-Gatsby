@@ -19,7 +19,8 @@ export default function CarrouselPortfolio({images, id}:Props) {
       allImageSharp {
         nodes {
           gatsbyImageData(
-            width: 350
+            width: 500
+            height: 300
             )
           parent {
             ... on File {
@@ -42,7 +43,7 @@ export default function CarrouselPortfolio({images, id}:Props) {
     function handleClickNext() {
         let carrousel = document.getElementById(`carroussel-portfolio${id}`);
         if (carrousel){
-            if (nbr < 5){
+            if (nbr < images.length){
                 setNbr(nbr + 1);
                 const newp = p - 1
                 setp(newp);
