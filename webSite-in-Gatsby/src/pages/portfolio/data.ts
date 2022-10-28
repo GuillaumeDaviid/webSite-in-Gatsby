@@ -1,3 +1,5 @@
+import netflix from '../../images/netflix.png'
+
 export const portfolioList = [
 	{
         name: "Netflix",
@@ -14,6 +16,7 @@ export const portfolioList = [
          - CI/CD avec Heroku et Github`,
 		technologies: ["React.js", "Javascript", "SASS (SCSS)", "Axios", "React Router", "Material-UI", "React-Testing-Library / JEST", "Heroku"],
 		link: "https://clone-guillaumedavid.herokuapp.com/",
+        images : ['netflix'],
 	},
 
     {
@@ -32,6 +35,7 @@ export const portfolioList = [
          - Tests unitaire JEST / React Testing Library`,
 		technologies: ["React.js", "Javascript", "SASS (SCSS)", "Axios", "React Router", "PHP", "SQL / MySQL", "React-Testing-Library / JEST", "API REST", "OVH"],
 		link: "https://github.com/GuillaumeDaviid/01-Academie-Version-React",
+        images : ["01academie", "01courses", "01home"],
 	},
 
     {
@@ -49,6 +53,7 @@ export const portfolioList = [
          - Test unitaire avec Jasmine`,
 		technologies: ["Javascript", "HTML/CSS", "Github", "Jasmine"],
 		link: "https://guillaumedaviid.github.io/Checkers-Game/",
+        images : ["checkers"],
 	},
 
     {
@@ -65,5 +70,6 @@ export const portfolioList = [
         - Test Unitaire React-testing-library`,
 		technologies: ["React.js", "Javascript", "SASS (SCSS)", "Redux", "React Router", "React-Testing-Library / JEST", "CI/CD", "Vercel"],
 		link: "https://commercia.vercel.app/",
+        images : ["commercia"],
 	},
 ]
