@@ -46,14 +46,20 @@ const Portfolio = () => {
 
                 <h2 className='PortfolioIndex_title'>{item.title}</h2>
                 <p className='PortfolioIndex_description'>{item.description}</p>
-                <a href={item.link} className='btn_link' target="_blank"><button className='btn btn_contact'>Visiter le site</button></a>
+                <a href={item.link} className='btn_link' target="_blank"><button className='btn btn_contact'>Visiter le projet</button></a>
                 <div> 
                     <CarrouselPortfolio images={item.images} id={item.id}/>
                 </div>
 
                 <h3>Fiche technique</h3>
 
-                <p className='PortfolioIndex_technique'>{item.technique}
+                <p className='PortfolioIndex_technique'>
+                    {item.technique}
+
+                    <h4>Taches :</h4>
+                    <p>
+                        {item.task}
+                    </p>
                 </p>
 
                 <h3>Technologies</h3>

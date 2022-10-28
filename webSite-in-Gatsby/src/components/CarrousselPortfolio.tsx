@@ -32,8 +32,6 @@ export default function CarrouselPortfolio({images, id}:Props) {
     }
   `)
 
-  console.log(id)
-
   const image = images.map((data:any) => {
     const image = allImageSharp?.nodes.find((node:any) => node.parent.name === data)?.gatsbyImageData;
     return <GatsbyImage image={image} alt="Portfolio"  className='CarrousselPortfolio_elt-item'/>
