@@ -1,0 +1,82 @@
+.PortfolioIndex {
+    text-align: center;
+    align-items: center;
+    color: rgb(56, 56, 56);
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+
+    &_items {
+        overflow: hidden;
+
+
+        &-elt {
+            position: relative;
+            display: flex;
+        }
+    }
+
+    &_right {
+        transform : rotate(180deg);
+    }
+
+    &_carroussel {
+        &-left {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            height: 98vh;
+            position: absolute;
+            left: 0;
+            background: transparent;
+            z-index: 99;
+
+            &:hover {
+                background: hsla(0,0%,100%,.5);
+                transition: all .5s ease 0s;
+            }
+        }
+
+        &-right {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            height: 98vh;
+            position: absolute;
+            right: 0;
+            background: transparent;
+            z-index: 99;
+
+            &:hover {
+                background: hsla(0,0%,100%,.5);
+                transition: all .5s ease 0s;
+            }
+        }
+
+        
+    }
+
+    &_title {
+        font-weight: bold;
+    }
+
+    &_technique {
+        width: 55vw;
+        text-align: center;
+    }
+
+    &_technologies {
+        text-align:left;
+        list-style-type: circle;
+
+        &-elt {
+            margin-top: 5px;
+        }
+    }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}

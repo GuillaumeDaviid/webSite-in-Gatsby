@@ -1,0 +1,57 @@
+.CarrousselPortfolio {
+    max-width: 550px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 50px;
+
+    &_right {
+        transform: rotate(180deg);
+    }
+
+    &-left {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        height: 300px;
+        left: 50px;
+        position: relative;
+        background: transparent;
+        z-index: 99;
+
+            &:hover {
+                background: hsla(0,0%,100%,.5);
+                transition: all .5s ease 0s;
+            }
+    }
+
+    &-right {
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        position: relative;
+        height: 300px;
+        left: 500px;
+        background: transparent;
+        z-index: 99;
+
+            &:hover {
+                background: hsla(0,0%,100%,.5);
+                transition: all .5s ease 0s;
+            }
+    }
+
+    &_elt {
+        display: flex;
+        z-index: 0;
+        min-width: 500px;
+        min-height: 300px;
+
+        &-item {
+            margin-right: 50px;
+            min-width: 500px;
+            min-height: 300px;
+        }
+    }
+}
