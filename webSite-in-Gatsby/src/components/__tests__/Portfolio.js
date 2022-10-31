@@ -53,17 +53,17 @@ describe("Portfolio", () => {
     expect(mobile).toBeTruthy();
   })
 
-  it("should have 5 portfolio elements", () => {
+  it("should have 7 portfolio elements", () => {
     render(<Portfolio />)
 
     const portfolio = screen.getAllByTestId('portfolio');
-    expect(portfolio).toHaveLength(5);
+    expect(portfolio).toHaveLength(7);
   })
 
-  it("should have 5 links in portfolio element", () => {
+  it("should have 7 links in portfolio element", () => {
     render(<Portfolio />)
 
     const portfolio = screen.getAllByTestId('link');
-    expect(portfolio).toHaveLength(5);
+    expect(portfolio).toHaveLength(7);
   })
 })

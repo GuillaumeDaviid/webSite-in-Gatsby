@@ -64,7 +64,7 @@ exports[`Portfolio renders correctly 1`] = `
           </h3>
           <a
             data-testid="link"
-            href="https://github.com/GuillaumeDaviid/Netflix-Clone"
+            href="https://clone-guillaumedavid.herokuapp.com/"
             target="_blank"
           >
             Link
@@ -147,7 +147,55 @@ exports[`Portfolio renders correctly 1`] = `
           </a>
         </div>
       </div>
+      <div
+        className="Portfolio_items-elt visible"
+        data-testid="portfolio"
+      >
+        <div
+          className="Portfolio_items-content"
+        >
+          <h3>
+            Commercia
+          </h3>
+          <a
+            data-testid="link"
+            href="https://commercia.vercel.app/"
+            target="_blank"
+          >
+            Link
+          </a>
+        </div>
+      </div>
+      <div
+        className="Portfolio_items-elt visible"
+        data-testid="portfolio"
+      >
+        <div
+          className="Portfolio_items-content"
+        >
+          <h3>
+            Leagora
+          </h3>
+          <a
+            data-testid="link"
+            href="https://visio.leagora.fr/"
+            target="_blank"
+          >
+            Link
+          </a>
+        </div>
+      </div>
     </div>
+    <a
+      className="btn_link"
+      href="/portfolio"
+    >
+      <button
+        className="btn btn_contact"
+      >
+        En voir plus
+      </button>
+    </a>
   </div>
 </section>
 `;
