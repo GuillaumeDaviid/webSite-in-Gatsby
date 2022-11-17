@@ -29,17 +29,18 @@ export default function Portfolio() {
 
                 <PortfolioItems selected={selected} image={<StaticImage alt="Netflix" src='../images/netflix.png' />} link='https://clone-guillaumedavid.herokuapp.com/' title='Netflix Clone' full={false}/>
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="Jeu de Dames" src='../images/checkers.png' />} link='https://guillaumedaviid.github.io/Checkers-Game/' title='Jeu de Dame' full={false}/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="01 Academie" src='../images/01academie.png' />} link='https://01academie.netlify.app/' title='01 ACADEMIE' full/>
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="01 Academie" src='../images/01academie.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="01 Academie" src='../images/01courses.png' />} link='https://01academie.netlify.app/' title='01 ACADEMIE' full/>
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="01 Academie" src='../images/01courses.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
-
-                <PortfolioItems selected={selected} image={<StaticImage alt="01 Academie" src='../images/01home.png' />} link='https://github.com/GuillaumeDaviid/01-Academie-Version-React' title='01 ACADEMIE' full/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="01 Academie" src='../images/01home.png' />} link='https://01academie.netlify.app/' title='01 ACADEMIE' full/>
 
                 <PortfolioItems selected={selected} image={<StaticImage alt="e-commerce" src='../images/commercia.png' />} link='https://commercia.vercel.app/' title='Commercia' full={false}/>
 
                 <PortfolioItems selected={selected} image={<StaticImage alt="leagora" src='../images/leagora_black.png' />} link='https://visio.leagora.fr/' title='Leagora' full={false}/>
+
+                <PortfolioItems selected={selected} image={<StaticImage alt="Jeu de Dames" src='../images/checkers.png' />} link='https://guillaumedaviid.github.io/Checkers-Game/' title='Jeu de Dame' full={false}/>
+
               
             </div>
 

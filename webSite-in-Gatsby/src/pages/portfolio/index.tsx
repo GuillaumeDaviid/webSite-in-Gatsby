@@ -42,7 +42,7 @@ const Portfolio = () => {
              - Base de donnée SQL / MySQL
              - Tests unitaire JEST / React Testing Library`,
             technologies: ["React.js", "Javascript", "SASS (SCSS)", "Axios", "React Router", "PHP", "SQL / MySQL", "React-Testing-Library / JEST", "API REST", "OVH"],
-            link: "https://github.com/GuillaumeDaviid/01-Academie-Version-React",
+            link: "https://01academie.netlify.app/",
             images : ["01academie", "01courses", "01home"],
         },
     
