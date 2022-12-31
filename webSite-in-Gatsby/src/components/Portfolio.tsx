@@ -39,7 +39,7 @@ export default function Portfolio() {
 
                 <PortfolioItems selected={selected} image={<StaticImage alt="leagora" src='../images/leagora_black.png' />} link='https://visio.leagora.fr/' title='Leagora' full={false}/>
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="Jeu de Dames" src='../images/checkers.png' />} link='https://guillaumedaviid.github.io/Checkers-Game/' title='Jeu de Dame' full={false}/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="e-survey" src='../images/logo-esurvey-v2.png' />} link='https://www.e-survey.io/' title='E-survey' full={false}/>
 
               
             </div>
