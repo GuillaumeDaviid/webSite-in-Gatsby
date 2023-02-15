@@ -27,7 +27,7 @@ export default function Portfolio() {
             </ul>
             <div className="Portfolio_items">
 
-                <PortfolioItems selected={selected} image={<StaticImage alt="Netflix" src='../images/netflix.png' />} link='https://clone-guillaumedavid.herokuapp.com/' title='Netflix Clone' full={false}/>
+                <PortfolioItems selected={selected} image={<StaticImage alt="Netflix" src='../images/netflix.png' />} link='https://clone-two-orcin.vercel.app/' title='Netflix Clone' full={false}/>
 
                 <PortfolioItems selected={selected} image={<StaticImage alt="01 Academie" src='../images/01academie.png' />} link='https://01academie.netlify.app/' title='01 ACADEMIE' full/>
 
