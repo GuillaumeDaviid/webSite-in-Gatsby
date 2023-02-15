@@ -24,7 +24,7 @@ const Portfolio = () => {
              - Test avec React-Testing Library et JEST
              - CI/CD avec Heroku et Github`,
             technologies: ["React.js", "Javascript", "SASS (SCSS)", "Axios", "React Router", "Material-UI", "React-Testing-Library / JEST", "Heroku"],
-            link: "https://clone-guillaumedavid.herokuapp.com/",
+            link: "https://clone-two-orcin.vercel.app/",
             images : ['netflix'],
         },
     
@@ -94,6 +94,23 @@ const Portfolio = () => {
             technologies: ["Javascript", "HTML/CSS", "Galene", "GitLab", "Docker", "CI/CD"],
             link: "https://visio.leagora.fr/",
             images : ["leagora_black","leagora", "leagora-salle"],
+        },
+
+        {
+            name: "e-survey",
+            title: 'e-survey',
+            description: "Je suis intervenu sur le projet en tant que développeur React.js.",
+            id: '6',
+            technique: `e-survey est une plateforme qui permet de créer des questionnaires 
+            personnalisés dans un but marketing.`,
+            task:`
+            - Intégration d'une barre de recherche pour les enquêtes
+            - Refonte de la page monitoring
+            - Ajout de personnalisation de la charte graphique des questionnaires
+            - Ajout des traductions en anglais`,
+            technologies: ["Javascript", "HTML/CSS", "ReactJS", "GitLab", "MobX", "Formik"],
+            link: "https://www.e-survey.io/",
+            images : ["logo-esurvey-v2"],
         },
     ]
 
