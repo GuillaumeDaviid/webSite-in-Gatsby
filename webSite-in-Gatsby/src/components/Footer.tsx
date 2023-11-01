@@ -8,7 +8,7 @@ export default function Footer() {
             <p className='Footer_msg'>Vivre, apprendre et monter de niveau chaque jours</p>
 
             
-            <p className="Footer_copyright">2022. All Rights Reserved</p>
+            <p className="Footer_copyright">2024. All Rights Reserved</p>
             
         </div>
     )

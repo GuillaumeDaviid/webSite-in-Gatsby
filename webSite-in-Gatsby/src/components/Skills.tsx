@@ -31,7 +31,7 @@ export default function Skill() {
                 <div className='skills' data-testid="skills">Javascript</div>
                 <div className='skills' data-testid="skills">SQL</div>
                 <div className='skills' data-testid="skills">PHP</div>
-                <div className='skills' data-testid="skills">Python</div>
+                <div className='skills' data-testid="skills">Angular</div>
                 <div className='skills' data-testid="skills">MySQL</div>
                 <div className='skills' data-testid="skills">Gatsby</div>
             </div>
